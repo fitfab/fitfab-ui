@@ -2,7 +2,7 @@
   "name": "fitfab-ui",
   "version": "0.1.1",
   "description": "NPM React Component Library",
-  "main": "index.js",
+  "main": "./build/index.js",
   "scripts": {
     "build": "babel lib -d build",
     "build:watch": "babel lib -w -d build",
@@ -41,6 +41,7 @@
     "@storybook/addon-actions": "^3.3.6",
     "@storybook/addon-links": "^3.3.6"
   },
+  "bundledDependencies": ["styled-components", "polished"],
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
