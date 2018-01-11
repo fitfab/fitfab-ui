@@ -1,4 +1,4 @@
-import Button from './lib/elements/Button'
+import Button from './build/elements/Button'
 module.exports = {
     Button,
 }

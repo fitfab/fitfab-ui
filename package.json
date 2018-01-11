@@ -1,5 +1,5 @@
 {
-  "name": "component-lib",
+  "name": "fitfab-ui",
   "version": "0.1.0",
   "description": "NPM React Component Library",
   "main": "index.js",
@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fitfab/component-lib.git"
+    "url": "git+https://github.com/fitfab/fitfab-ui.git"
   },
   "keywords": [],
   "author": "Miguel Julio <miguelajulio@gmail.com> (http://fitfab.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fitfab/component-lib/issues"
+    "url": "https://github.com/fitfab/fitfab-ui/issues"
   },
-  "homepage": "https://github.com/fitfab/component-lib#readme",
+  "homepage": "https://github.com/fitfab/fitfab-ui#readme",
   "devDependencies": {
     "@storybook/react": "^3.3.6",
     "babel-cli": "^6.26.0",
