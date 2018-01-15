@@ -5,9 +5,9 @@ import { action } from '@storybook/addon-actions'
 import { withKnobs, text, boolean, number } from '@storybook/addon-knobs/react'
 //import { linkTo } from "@storybook/addon-links";
 
-import { Button } from '../build/index';
+import { H1, H2 } from '../build/index';
 
-const stories = storiesOf('Buttons', module);
+const stories = storiesOf('Headings', module);
 // Add the `withKnobs` decorator to add knobs support to your stories.
 // You can also configure `withKnobs` as a global decorator.
 stories.addDecorator(withKnobs);
@@ -18,33 +18,29 @@ const css = {
 }
 
 stories
-    .add('Default', () => (
+    .add('H1', () => (
         <div style={{ padding: '20px' }}>
-            <Button onClick={action('clicked')}>{text('Label', 'get started')}</Button>
-
+            <H1>{text('Label', 'H1 Heading')}</H1>
         </div>
 
     ))
-    .add('reverse', () => {
+    .add('H1 reverse', () => {
 
         const reverse = boolean('reverse', true)
         return (
             <div style={css}>
-                <Button reverse={reverse} onClick={action('clicked')}>
-                    {text('Label', 'get started')}
-                </Button>
+                <H1 reverse={reverse}>
+                    {text('Label', 'H1 Heading')}
+                </H1>
             </div>
         )
     })
-    .add('reverse outlined', () => {
-
-        const reverse = boolean('reverse', false)
-        const outlined = boolean('outlined', true)
+    .add('H2', () => {
         return (
-            <div style={css}>
-                <Button reverse={reverse} outlined={outlined} onClick={action('clicked')}>
-                    {text('Label', 'get started')}
-                </Button>
+            <div style={{ padding: '20px' }}>
+                <H2>
+                    {text('Label', 'H2 Heading')}
+                </H2>
             </div>
         )
     })

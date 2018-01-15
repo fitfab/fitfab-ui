@@ -18,12 +18,12 @@ const Button = styled.button`
     font-weight: 100;
     margin: 8px 0;
     outline: none;
-    padding: 0 24px;
+    padding: 0 36px 0 24px;
     text-align: left;
     text-transform: uppercase;
     transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
     position: relative;
-    width: 150px;
+    min-width: 150px;
 
     &: after {
         content: '';
