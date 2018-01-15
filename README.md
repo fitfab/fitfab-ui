@@ -18,3 +18,7 @@ _NPM LINK_
 Then start using as normal:
 
 `import { Button } from 'fitfab-ui'`
+
+### Developing within fitfab-ui
+
+
