@@ -2,10 +2,11 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import { withKnobs, text, boolean, number } from '@storybook/addon-knobs/react'
-//import { linkTo } from "@storybook/addon-links";
+import { withKnobs, text, boolean } from '@storybook/addon-knobs/react'
+import { withReadme, withDocs } from 'storybook-readme';
 
 import { Button } from '../build/index';
+import ButtonReadme from '../lib/elements/buttons/README.md'
 
 const stories = storiesOf('Buttons', module);
 // Add the `withKnobs` decorator to add knobs support to your stories.
@@ -18,14 +19,14 @@ const css = {
 }
 
 stories
-    .add('Default', () => (
+    .add('Default', withDocs(ButtonReadme, () => (
         <div style={{ padding: '20px' }}>
             <Button onClick={action('clicked')}>{text('Label', 'get started')}</Button>
 
         </div>
 
-    ))
-    .add('reverse', () => {
+    )))
+    .add('reverse', withDocs(ButtonReadme, () => {
 
         const reverse = boolean('reverse', true)
         return (
@@ -35,16 +36,14 @@ stories
                 </Button>
             </div>
         )
-    })
-    .add('reverse outlined', () => {
-
-        const reverse = boolean('reverse', false)
+    }))
+    .add('outlined', withDocs(ButtonReadme, () => {
         const outlined = boolean('outlined', true)
         return (
             <div style={css}>
-                <Button reverse={reverse} outlined={outlined} onClick={action('clicked')}>
+                <Button outlined={outlined} onClick={action('clicked')}>
                     {text('Label', 'get started')}
                 </Button>
             </div>
         )
-    })
+    }))

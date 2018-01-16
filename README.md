@@ -19,6 +19,18 @@ Then start using as normal:
 
 `import { Button } from 'fitfab-ui'`
 
-### Developing within fitfab-ui
+### Publishing to NPM
 
+a) Make sure repo is clean -- ready to be pushed.
 
+b) Update package version (major | minor | patch | prerelease | preminor | premajor)
+
+`npm version patch -m "Version %s - relevant comments"` 
+
+c) Update remote repo and tag
+
+`git push && git push --tags`
+
+d) Finally publish to NPM
+
+`npm publish`

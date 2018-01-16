@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import * as colors from '../styles/colors'
+import * as colors from '../../styles/colors'
 
 export const H1 = styled.h1`
     color: ${props => props.reverse ? colors['white'] : colors['dark']};
