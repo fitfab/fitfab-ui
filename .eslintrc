@@ -1,7 +1,7 @@
 {
   "root": true,
   "parser": "babel-eslint",
-  "plugins": ["jsx-a11y", "react"],
+  "plugins": ["jsx-a11y", "react", "styled-components-config"],
   "env": {
     "browser": true,
     "commonjs": true,

@@ -36,11 +36,6 @@ stories
                     reverse={reverse}
                 >
                     {text('Label', 'get started')}
-                    <Fitfab
-                        fill="#c9c"
-                        height="8"
-                        width="8"
-                    />
                 </Button>
             </div>
         )

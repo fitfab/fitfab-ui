@@ -13,10 +13,9 @@ function Icon({ fill, stroke, height, width }) {
             xmlns='http://www.w3.org/2000/svg'
         >
             <g
-                fill={fill || '#D8D8D8'}
+                fill={colors[fill]}
                 fillRule='evenodd'
                 id='ff-icon'
-                stroke={stroke || 'none'}
             >
                 <polygon
                     id='f1'
@@ -37,6 +36,10 @@ Icon.propTypes = {
     height: string,
     stroke:string,
     width: string
+}
+
+Icon.defaultProps = {
+    fill: 'mediumGray'
 }
 
 export const Fitfab = styled(Icon)`

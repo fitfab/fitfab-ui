@@ -5,12 +5,10 @@
   "tabWidth": 4,
   "useTabs": false,
   "bracketSpacing": true,
-  "overrides": [
-    {
-      "files": ["*.json", ".prettierrc", ".stylelintrc", ".eslintrc"],
-      "options": {
-        "tabWidth": 2
-      }
+  "overrides": [{
+    "files": ["*.json", ".prettierrc", ".stylelintrc", ".eslintrc"],
+    "options": {
+      "tabWidth": 2
     }
-  ]
+  }]
 }
