@@ -3,9 +3,9 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { withKnobs, text, boolean } from '@storybook/addon-knobs/react'
-import { withReadme, withDocs } from 'storybook-readme';
+import { withDocs } from 'storybook-readme';
 
-import { Button } from '../build/index';
+import { Button, Fitfab } from '../build/index';
 import ButtonReadme from '../lib/elements/buttons/README.md'
 
 const stories = storiesOf('Buttons', module);
@@ -31,7 +31,10 @@ stories
         const reverse = boolean('reverse', true)
         return (
             <div style={css}>
-                <Button reverse={reverse} onClick={action('clicked')}>
+                <Button
+                    onClick={action('clicked')}
+                    reverse={reverse}
+                >
                     {text('Label', 'get started')}
                 </Button>
             </div>
@@ -41,7 +44,10 @@ stories
         const outlined = boolean('outlined', true)
         return (
             <div style={css}>
-                <Button outlined={outlined} onClick={action('clicked')}>
+                <Button
+                    onClick={action('clicked')}
+                    outlined={outlined}
+                >
                     {text('Label', 'get started')}
                 </Button>
             </div>
