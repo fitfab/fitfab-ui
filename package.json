@@ -1,6 +1,6 @@
 {
   "name": "fitfab-ui",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "NPM React Component Library",
   "main": "./build/index.js",
   "scripts": {
