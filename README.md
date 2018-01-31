@@ -35,7 +35,13 @@ d) Finally publish to NPM
 
 `npm publish`
 
+---
+
 ### Babel 7 upgrade
+
+[reference article](http://artsy.github.io/blog/2017/11/27/Babel-7-and-TypeScript/)
+
+[sample repo](https://github.com/damassi/babel-7-typescript-example)
 
 ```json
 "devDependencies": {
@@ -55,3 +61,5 @@ d) Finally publish to NPM
   "babel-core": "^7.0.0-bridge.0"
 }
 ```
+
+---
