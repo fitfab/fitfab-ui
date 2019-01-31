@@ -2665,12 +2665,6 @@ css-to-react-native@^2.0.3:
     fbjs "^0.8.5"
     postcss-value-parser "^3.3.0"
 
-css-vendor@^0.3.8:
-  version "0.3.8"
-  resolved "https://registry.yarnpkg.com/css-vendor/-/css-vendor-0.3.8.tgz#6421cfd3034ce664fe7673972fd0119fc28941fa"
-  dependencies:
-    is-in-browser "^1.0.2"
-
 css-what@2.1:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/css-what/-/css-what-2.1.0.tgz#9467d032c38cfaefb9f2d79501253062f87fa1bd"
@@ -3865,6 +3859,16 @@ html-loader@^0.5.4:
     loader-utils "^1.1.0"
     object-assign "^4.1.1"
 
+html-loader@^0.5.5:
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/html-loader/-/html-loader-0.5.5.tgz#6356dbeb0c49756d8ebd5ca327f16ff06ab5faea"
+  dependencies:
+    es6-templates "^0.2.3"
+    fastparse "^1.1.1"
+    html-minifier "^3.5.8"
+    loader-utils "^1.1.0"
+    object-assign "^4.1.1"
+
 html-minifier@^3.2.3, html-minifier@^3.5.8:
   version "3.5.8"
   resolved "https://registry.yarnpkg.com/html-minifier/-/html-minifier-3.5.8.tgz#5ccdb1f73a0d654e6090147511f6e6b2ee312700"
@@ -4129,10 +4133,6 @@ is-glob@^2.0.0, is-glob@^2.0.1:
   dependencies:
     is-extglob "^1.0.0"
 
-is-in-browser@^1.0.2:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/is-in-browser/-/is-in-browser-1.1.3.tgz#56ff4db683a078c6082eb95dad7dc62e1d04f835"
-
 is-number@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/is-number/-/is-number-2.1.0.tgz#01fcbbb393463a548f2f466cce16dece49db908f"
@@ -4186,10 +4186,6 @@ is-primitive@^2.0.0:
 is-promise@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/is-promise/-/is-promise-2.1.0.tgz#79a2a9ece7f096e80f36d2b2f3bc16c1ff4bf3fa"
-
-is-react-prop@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/is-react-prop/-/is-react-prop-1.0.0.tgz#b90040b44bde7c03e990c8d3046f87445577ee3f"
 
 is-regex@^1.0.4:
   version "1.0.4"
@@ -4473,6 +4469,10 @@ lodash.sortby@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
 
+lodash.toarray@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/lodash.toarray/-/lodash.toarray-4.4.0.tgz#24c4bfcd6b2fba38bfd0594db1179d8e9b656561"
+
 lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
@@ -4527,9 +4527,20 @@ markdown-loader@^2.0.1:
     loader-utils "^1.1.0"
     marked "^0.3.9"
 
+markdown-loader@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/markdown-loader/-/markdown-loader-4.0.0.tgz#502eb94f5db1673beb1721bed82dac9e1d333b9a"
+  dependencies:
+    loader-utils "^1.1.0"
+    marked "^0.5.0"
+
 marked@^0.3.9:
   version "0.3.12"
   resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.12.tgz#7cf25ff2252632f3fe2406bde258e94eee927519"
+
+marked@^0.5.0:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-0.5.2.tgz#3efdb27b1fd0ecec4f5aba362bddcd18120e5ba9"
 
 material-colors@^1.2.1:
   version "1.2.5"
@@ -4719,6 +4730,12 @@ node-dir@^0.1.10:
   resolved "https://registry.yarnpkg.com/node-dir/-/node-dir-0.1.17.tgz#5f5665d93351335caabef8f1c554516cf5f1e4e5"
   dependencies:
     minimatch "^3.0.2"
+
+node-emoji@1.8.1:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/node-emoji/-/node-emoji-1.8.1.tgz#6eec6bfb07421e2148c75c6bba72421f8530a826"
+  dependencies:
+    lodash.toarray "^4.4.0"
 
 node-fetch@^1.0.1:
   version "1.7.3"
@@ -5478,6 +5495,13 @@ prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.7,
     loose-envify "^1.3.1"
     object-assign "^4.1.1"
 
+prop-types@^15.6.2:
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
+  dependencies:
+    loose-envify "^1.3.1"
+    object-assign "^4.1.1"
+
 proxy-addr@~2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/proxy-addr/-/proxy-addr-2.0.2.tgz#6571504f47bb988ec8180253f85dd7e14952bdec"
@@ -5635,14 +5659,14 @@ react-docgen@^2.15.0:
     node-dir "^0.1.10"
     recast "^0.12.6"
 
-react-dom@^16.2.0:
-  version "16.2.0"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.2.0.tgz#69003178601c0ca19b709b33a83369fe6124c044"
+react-dom@^16.2.1:
+  version "16.7.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.7.0.tgz#a17b2a7ca89ee7390bc1ed5eb81783c7461748b8"
   dependencies:
-    fbjs "^0.8.16"
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    prop-types "^15.6.0"
+    prop-types "^15.6.2"
+    scheduler "^0.12.0"
 
 react-fuzzy@^0.5.1:
   version "0.5.1"
@@ -6067,30 +6091,6 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^2.0.0"
     inherits "^2.0.1"
 
-rockey-css-parse@^0.0.16-alpha.256b890c:
-  version "0.0.16-alpha.256b890c"
-  resolved "https://registry.yarnpkg.com/rockey-css-parse/-/rockey-css-parse-0.0.16-alpha.256b890c.tgz#2d67f7c889a7cde5099a70f5bd6039ca8c3837f7"
-  dependencies:
-    lodash "^4.17.4"
-
-rockey-react@=0.0.16-alpha.256b890c:
-  version "0.0.16-alpha.256b890c"
-  resolved "https://registry.yarnpkg.com/rockey-react/-/rockey-react-0.0.16-alpha.256b890c.tgz#d4f0f5252290218d608b4fc7d16890dd54d5940a"
-  dependencies:
-    classnames "^2.2.5"
-    is-react-prop "^1.0.0"
-    lodash "^4.17.4"
-    rockey "^0.0.16-alpha.256b890c"
-
-rockey@^0.0.16-alpha.256b890c:
-  version "0.0.16-alpha.256b890c"
-  resolved "https://registry.yarnpkg.com/rockey/-/rockey-0.0.16-alpha.256b890c.tgz#989e4dc1841870c1f6c00ba1a09a2d384f71e5eb"
-  dependencies:
-    classnames "^2.2.5"
-    css-vendor "^0.3.8"
-    lodash "^4.17.4"
-    rockey-css-parse "^0.0.16-alpha.256b890c"
-
 run-async@^2.2.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/run-async/-/run-async-2.3.0.tgz#0371ab4ae0bdd720d4166d7dfda64ff7a445a6c0"
@@ -6120,6 +6120,13 @@ safe-buffer@5.1.1, safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@^5.1.1, s
 sax@~1.2.1:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
+
+scheduler@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.12.0.tgz#8ab17699939c0aedc5a196a657743c496538647b"
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
 
 schema-utils@^0.3.0:
   version "0.3.0"
@@ -6330,13 +6337,16 @@ statuses@~1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.3.1.tgz#faf51b9eb74aaef3b3acf4ad5f61abf24cb7b93e"
 
-storybook-readme@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/storybook-readme/-/storybook-readme-3.2.0.tgz#cc2b69b14b768aeb0b8b471f0cab9a62c8b86db4"
+storybook-readme@4.0.5:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/storybook-readme/-/storybook-readme-4.0.5.tgz#e250d9b5e781ece567b861fbfb8027dc13e6aace"
   dependencies:
+    html-loader "^0.5.5"
     lodash "^4.17.4"
+    markdown-loader "^4.0.0"
+    marked "^0.5.0"
+    node-emoji "1.8.1"
     prismjs "^1.9.0"
-    rockey-react "=0.0.16-alpha.256b890c"
     string-raw "^1.0.1"
 
 stream-browserify@^2.0.1:
