@@ -1,14 +1,17 @@
 {
   "semi": false,
   "singleQuote": true,
-  "trailingComma": "es5",
+  "printWidth": 120,
+  "trailingComma": "all",
   "tabWidth": 4,
   "useTabs": false,
   "bracketSpacing": true,
-  "overrides": [{
-    "files": ["*.json", ".prettierrc", ".stylelintrc", ".eslintrc"],
-    "options": {
-      "tabWidth": 2
+  "overrides": [
+    {
+      "files": ["*.json", ".prettierrc", ".stylelintrc", ".eslintrc"],
+      "options": {
+        "tabWidth": 2
+      }
     }
-  }]
+  ]
 }

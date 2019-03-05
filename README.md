@@ -6,14 +6,18 @@ install
 
 usesage
 
-`import { Button } from 'fitfab-ui'`
+```js
+import { prettyDate } from 'fitfab-ui'
+const pretty = prettyDate('8/2/2019')
+// pretty should be: 'August 2 2019'
+```
 
 ### using local copy of fitfab-ui
 
 _NPM LINK_
 
-* from the root of 'fitfab-ui' run: `npm link`
-* from the root of your app run: `npm link fitfab-ui`
+-   from the root of 'fitfab-ui' run: `npm link`
+-   from the root of your app run: `npm link fitfab-ui`
 
 Then start using as normal:
 
@@ -63,3 +67,28 @@ d) Finally publish to NPM
 ```
 
 ---
+
+### Typescript Version
+
+*NPM CMD:*  [read about npm scripts](https://docs.npmjs.com/misc/scripts)
+
+`"prepare" : "npm run build"` --
+run both BEFORE the package is packed and published, and on local npm install. 
+
+So here I build library
+
+`"prepublishOnly": "npm test && npm run lint"` -- this run BEFORE the package is prepared and packed, ONLY on npm publish. 
+
+A good place to verify that tests & linting rules are passing.
+
+`"preversion": "npm run lint"` -- run BEFORE bumping the package version.
+
+Ensure that the new version DOES NOT have bad code.
+
+`"version": "npm run format && git add -A src"` -- run AFTER bumping the package version, but BEFORE commit.
+
+Again ensuring that code still good when increasing the version via the CMD: `npm version <patch | minor | major>` 
+
+`"postversion": "git push && git push --tags"` -- run AFTER bumping the package version, and AFTER commit.
+
+So here I push the commit and tags 
