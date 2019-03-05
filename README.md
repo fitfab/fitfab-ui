@@ -6,7 +6,11 @@ install
 
 usesage
 
-`import { Button } from 'fitfab-ui'`
+```js
+import { prettyDate } from 'fitfab-ui'
+const pretty = prettyDate('8/2/2019')
+// pretty should be: 'August 2 2019'
+```
 
 ### using local copy of fitfab-ui
 
