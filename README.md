@@ -12,8 +12,8 @@ usesage
 
 _NPM LINK_
 
-* from the root of 'fitfab-ui' run: `npm link`
-* from the root of your app run: `npm link fitfab-ui`
+-   from the root of 'fitfab-ui' run: `npm link`
+-   from the root of your app run: `npm link fitfab-ui`
 
 Then start using as normal:
 
@@ -63,3 +63,7 @@ d) Finally publish to NPM
 ```
 
 ---
+
+### Typescript version
+
+`"prepare" : "npm run build"` will run both BEFORE the package is packed and published, and on local npm install
