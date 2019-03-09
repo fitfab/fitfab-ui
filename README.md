@@ -1,5 +1,9 @@
 ### UI Component with styled-component
 
+With this release, I target ES6 JavaScript. ES6 is much closer to TypeScript and produces less code, which means faster loading times.
+
+This Library is meant to be used in modern browser -- I don't support IE11. I want to move forward.
+
 install
 
 `yarn add fitfab-ui`

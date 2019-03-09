@@ -1,16 +1,15 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
+    "target": "es6",
+    "module": "es6",
     "lib": ["es5", "es6", "es7", "es2017", "dom"],
     "declaration": true,
     "outDir": "./lib",
     "strict": true,
     "sourceMap": true,
     "allowJs": false,
-    "jsx": "react",
+    "jsx": "preserve",
     "moduleResolution": "node",
-    "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noImplicitAny": true,
@@ -18,10 +17,9 @@
     "noUnusedLocals": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "skipLibCheck": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   },
   "include": ["src"],
-  "exclude": ["node_modules", "**/__tests__/*", "**/*.test.(ts|tsx)", "**/*.spec.(ts|tsx)"]
+  "exclude": ["node_modules", "**/__tests__/*", "**/*.test.ts", "**/*.test.tsx"]
 }
