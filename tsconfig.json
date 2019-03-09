@@ -5,7 +5,22 @@
     "lib": ["es5", "es6", "es7", "es2017", "dom"],
     "declaration": true,
     "outDir": "./lib",
-    "strict": true
+    "strict": true,
+    "sourceMap": true,
+    "allowJs": false,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
   "include": ["src"],
   "exclude": ["node_modules", "**/__tests__/*", "**/*.test.(ts|tsx)", "**/*.spec.(ts|tsx)"]
