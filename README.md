@@ -1,8 +1,14 @@
-### UI Component with styled-component
+### Fitfab-UI Component with styled-component
 
 With this release, I target ES6 JavaScript. ES6 is much closer to TypeScript and produces less code, which means faster loading times.
 
-This Library is meant to be used in modern browser -- I don't support IE11. I want to move forward.
+This Library is meant to be used in modern browsers -- I don't support IE11. I want to move forward.
+
+_Bundle Dependencies_:
+
+-   `react@`_^16.8.4_
+-   `react-dom@`_^16.8.4_
+-   `styled-components@`_^4.1.3_
 
 install
 
@@ -28,23 +34,6 @@ Then start using as normal:
 `import { Button } from 'fitfab-ui'`
 
 ---
-
-### Babel 7 upgrade
-
-[reference article](http://artsy.github.io/blog/2017/11/27/Babel-7-and-TypeScript/)
-
-[sample repo](https://github.com/damassi/babel-7-typescript-example)
-
-```json
-"devDependencies": {
-    "@babel/cli": "^7.0.0-beta.39",
-    "@babel/core": "^7.0.0-beta.39",
-    "@babel/preset-env": "^7.0.0-beta.39",
-    "@babel/preset-react": "^7.0.0-beta.39",
-    "@babel/preset-stage-3": "^7.0.0-beta.39",
-    "@babel/preset-typescript": "^7.0.0-beta.39",
-}
-```
 
 **Note:** Also add this to the `package.json` for `storybook` to work -- storybook has a dependency on `babel-core`
 

@@ -43,19 +43,22 @@
     "@types/jest": "^24.0.9",
     "@types/react": "^16.8.7",
     "@types/react-dom": "^16.8.2",
+    "@types/styled-components": "^4.1.12",
     "babel-loader": "^8.0.5",
     "jest": "^24.1.0",
     "prettier": "^1.16.4",
+    "styled-components": "^4.1.3",
     "ts-jest": "^24.0.0",
     "tslint": "^5.13.1",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.3.3333"
-  },
-  "bundledDependencies": [
-    "styled-components"
-  ],
-  "dependencies": {
+    "typescript": "^3.3.3333",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
-  }
+  },
+  "bundledDependencies": [
+    "react",
+    "react-dom",
+    "styled-components"
+  ],
+  "dependencies": {}
 }
