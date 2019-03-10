@@ -1,5 +1,5 @@
 import React from 'react'
-// tslint:disable-next-line:interface-name
+
 export interface FitfabProps {
     brandColor: string
     defaultColor: string
