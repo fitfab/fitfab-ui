@@ -1,11 +1,26 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
+    "target": "es6",
+    "module": "es6",
+    "lib": ["es5", "es6", "es7", "es2017", "dom"],
     "declaration": true,
     "outDir": "./lib",
-    "strict": true
+    "strict": true,
+    "sourceMap": true,
+    "allowJs": false,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
   "include": ["src"],
-  "exclude": ["node_modules", "**/__tests__/*"]
+  "exclude": ["node_modules", "**/__tests__/*", "**/*.test.ts", "**/*.test.tsx"]
 }
