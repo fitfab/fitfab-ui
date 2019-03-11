@@ -1,6 +1,6 @@
 {
   "name": "fitfab-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "fitfab UI elements",
   "main": "./lib/index.js",
   "types": "lib/index.d.ts",
@@ -20,7 +20,8 @@
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -47,13 +48,14 @@
     "babel-loader": "^8.0.5",
     "jest": "^24.1.0",
     "prettier": "^1.16.4",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "standard-version": "^5.0.1",
     "styled-components": "^4.1.3",
     "ts-jest": "^24.0.0",
     "tslint": "^5.13.1",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.3.3333",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "typescript": "^3.3.3333"
   },
   "bundledDependencies": [
     "react",
