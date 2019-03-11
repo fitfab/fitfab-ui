@@ -22,6 +22,8 @@ const pretty = prettyDate('8/2/2019')
 // pretty should be: 'August 2 2019'
 ```
 
+See the [Storybook setup](./STORYBOOK_SETUP.md)
+
 ### using local copy of fitfab-ui
 
 _NPM LINK_
@@ -32,16 +34,6 @@ _NPM LINK_
 Then start using as normal:
 
 `import { Button } from 'fitfab-ui'`
-
----
-
-**Note:** Also add this to the `package.json` for `storybook` to work -- storybook has a dependency on `babel-core`
-
-```json
-"resolutions": {
-  "babel-core": "^7.0.0-bridge.0"
-}
-```
 
 ---
 
