@@ -10,10 +10,11 @@ import { prettyDate, FitfabLogo } from '../lib/index'
 storiesOf('Fitfab UI', module).add('FitfabLogo', () => {
     return (
         <FitfabLogo
+            className="js_triggerFitfab"
             aria-label="Fitfab"
             brandColor={text('brandColor', '#FF4158')}
-            height={number('height', 43)}
-            width={number('width', 159)}
+            height={text('height', '43px')}
+            width={text('width', '159px')}
         />
     )
 })

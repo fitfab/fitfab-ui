@@ -1,12 +1,14 @@
 import React from 'react'
 
+import styled from 'styled-components'
+
 export interface FitfabProps {
     brandColor: string
     defaultColor: string
-    width: number
-    height: number
+    width: string
+    height: string
 }
-export const FitfabLogo: React.SFC<FitfabProps> = props => {
+const SVG: React.SFC<FitfabProps> = props => {
     const {
         brandColor = '#FF4158', // default brand color
         defaultColor = '#ADBBC5', // default color
@@ -15,7 +17,7 @@ export const FitfabLogo: React.SFC<FitfabProps> = props => {
         ...rest
     } = props
     return (
-        <svg width={width} height={height} {...rest}>
+        <svg viewBox="0 0 159 43" {...rest}>
             <g fill="none" fillRule="evenodd">
                 <path fill={defaultColor} d="M34 .05h39.719v10.606H60.184V43H46.912V10H34z" />
                 <path
@@ -34,3 +36,8 @@ export const FitfabLogo: React.SFC<FitfabProps> = props => {
         </svg>
     )
 }
+
+export const FitfabLogo = styled(SVG)`
+    height: ${p => p.height};
+    width: ${p => p.width};
+`
