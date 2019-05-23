@@ -4,7 +4,9 @@ With this release, I target ES6 JavaScript. ES6 is much closer to TypeScript and
 
 This Library is meant to be used in modern browsers -- I don't support IE11. I want to move forward.
 
-_Bundle Dependencies_:
+Other decisions: [read more here](./decisions.md)
+
+_peerDependencies_:
 
 -   `react@`_^16.8.4_
 -   `react-dom@`_^16.8.4_
