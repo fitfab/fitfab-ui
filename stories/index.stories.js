@@ -7,7 +7,7 @@ import { withKnobs, text, boolean, number, object } from '@storybook/addon-knobs
 
 import { prettyDate, FitfabLogo } from '../lib/index'
 
-storiesOf('Fitfab UI', module).add('FitfabLogo', () => {
+storiesOf('Icons', module).add('FitfabLogo', () => {
     return (
         <FitfabLogo
             className="js_triggerFitfab"

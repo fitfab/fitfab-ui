@@ -7,8 +7,14 @@ import { withKnobs, text, boolean, number, object } from '@storybook/addon-knobs
 
 import { prettyDate } from '../lib/index'
 
-storiesOf('Fitfab Utils', module).add('prettyDate', () => (
-    <p>
-        {text('Label', 'Pretty Date?')} {prettyDate('08/02/1966')}
-    </p>
-))
+storiesOf('Utils', module)
+    .add('Date: 08/02/1966', () => (
+        <p>
+            {text('custom', '08/02/1966')} - {prettyDate('08/02/1966')}
+        </p>
+    ))
+    .add('Date: today', () => (
+        <p>
+            {text('default', 'today')} - {prettyDate()}
+        </p>
+    ))
