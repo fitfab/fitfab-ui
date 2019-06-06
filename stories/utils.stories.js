@@ -8,13 +8,5 @@ import { withKnobs, text, boolean, number, object } from '@storybook/addon-knobs
 import { prettyDate } from '../lib/index'
 
 storiesOf('Utils', module)
-    .add('Date: 08/02/1966', () => (
-        <p>
-            {text('custom', '08/02/1966')} - {prettyDate('08/02/1966')}
-        </p>
-    ))
-    .add('Date: today', () => (
-        <p>
-            {text('default', 'today')} - {prettyDate()}
-        </p>
-    ))
+    .add('Date: 08/02/1966', () => <p>custom - {prettyDate(`${text('custom', '08/02/1966')}`)}</p>)
+    .add('Date: today', () => <p>today - {prettyDate()}</p>)
