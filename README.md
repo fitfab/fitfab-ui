@@ -63,3 +63,9 @@ Again ensuring that code still good when increasing the version via the CMD: `np
 `"postversion": "git push && git push --tags"` -- run AFTER bumping the package version, and AFTER commit.
 
 So here I push the commit and tags
+
+## Rollup typescript and babel setup
+
+https://github.com/microsoft/TypeScript-Babel-Starter
+
+https://www.styled-components.com/docs/tooling#usage
