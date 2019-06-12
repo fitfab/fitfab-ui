@@ -4,12 +4,13 @@
         [
             "babel-plugin-styled-components",
             {
-                // adds className and displayName
+                // Better Debugging -- adds className and displayName
                 "displayName": true,
-                // SSR
+                // Suport for SSR
                 "ssr": true,
-                // cleaner version than "babel-preset-latest"
+                // Template String Transpilation -- smaller output than "babel-preset-latest"
                 "transpileTemplateLiterals": true,
+                // Dead Code Elimination
                 "pure": true
             }
         ],
