@@ -20,7 +20,7 @@ exports[`Render Fitfab logo with default props 1`] = `
 ",
         ],
       },
-      "displayName": "Styled(SVG)",
+      "displayName": "FitfabLogo",
       "foldedComponentIds": Array [],
       "render": [Function],
       "self": [Circular],
