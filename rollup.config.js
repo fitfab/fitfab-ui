@@ -1,3 +1,4 @@
+import analyze from 'rollup-plugin-analyzer'
 import resolve from 'rollup-plugin-node-resolve'
 import babel from 'rollup-plugin-babel'
 import external from 'rollup-plugin-peer-deps-external'
@@ -14,6 +15,7 @@ export default {
 
         // Compile TypeScript/JavaScript files
         babel({ extensions, include: ['src/**/*'] }),
+        analyze({ limit: 0 }),
     ],
 
     output: [
