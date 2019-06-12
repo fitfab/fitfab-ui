@@ -1,4 +1,4 @@
-### Fitfab-UI Component (Rollup, TypeScript, Babel, React styled-components)
+# Fitfab-UI Component (Rollup, TypeScript, Babel, React styled-components)
 
 With this release, I target ES6 JavaScript. ES6 is much closer to TypeScript and produces less code, which means faster loading times.
 
@@ -25,7 +25,7 @@ const pretty = prettyDate('8/2/2019')
 
 See the [Storybook setup](./STORYBOOK_SETUP.md)
 
-### using local copy of fitfab-ui
+## Using local copy of fitfab-ui
 
 _NPM LINK_
 
@@ -38,7 +38,7 @@ Then start using as normal:
 
 ---
 
-### Script CMD explained.
+## Script CMD explained.
 
 _NPM CMD:_ [read about npm scripts](https://docs.npmjs.com/misc/scripts)
 
@@ -71,13 +71,13 @@ _NPM CMD:_ [read about npm scripts](https://docs.npmjs.com/misc/scripts)
 
 -   So here I push the commit and tags
 
-## Rollup typescript and babel setup
+## Rollup TypeScript & Babel setup
 
 -   [Microsoft TypeScript Babel Setup](https://github.com/microsoft/TypeScript-Babel-Starter)
 
 -   Styled-components: [babel-plugin-styled-components](https://www.styled-components.com/docs/tooling#usage)
 
-### Jest & Enzyme setup
+## Jest & Enzyme setup
 
 NOTE: make sure that jsx is set to react `{ "jsx": "react" }` within the **tsconfig.json** file.
 
