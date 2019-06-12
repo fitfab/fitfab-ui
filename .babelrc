@@ -1,4 +1,19 @@
 {
-    "presets": ["@babel/env", "@babel/typescript"],
-    "plugins": ["@babel/proposal-class-properties", "@babel/proposal-object-rest-spread"]
+    "presets": ["@babel/env", "@babel/typescript", "@babel/react"],
+    "plugins": [
+        [
+            "babel-plugin-styled-components",
+            {
+                // adds className and displayName
+                "displayName": true,
+                // SSR
+                "ssr": true,
+                // cleaner version than "babel-preset-latest"
+                "transpileTemplateLiterals": true,
+                "pure": true
+            }
+        ],
+        "@babel/proposal-class-properties",
+        "@babel/proposal-object-rest-spread"
+    ]
 }
