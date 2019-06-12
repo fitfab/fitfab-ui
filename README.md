@@ -69,3 +69,9 @@ So here I push the commit and tags
 https://github.com/microsoft/TypeScript-Babel-Starter
 
 https://www.styled-components.com/docs/tooling#usage
+
+### Jest & Enzyme setup
+
+NOTE: make sure that the **tsconfig.json** jsx is set to react `"jsx": "react"`
+
+Reference: [React TS Jest Enzyme Setup](https://github.com/cedrickchee/react-typescript-jest-enzyme-testing)

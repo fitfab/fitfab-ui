@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Fitfab logo with default props 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bdVaJa",
+        "isStatic": false,
+        "rules": Array [
+          "
+    height: ",
+          [Function],
+          ";
+    width: ",
+          [Function],
+          ";
+",
+        ],
+      },
+      "displayName": "Styled(SVG)",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "self": [Circular],
+      "styledComponentId": "sc-bdVaJa",
+      "target": [Function],
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+/>
+`;
