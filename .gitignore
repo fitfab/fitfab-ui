@@ -1,5 +1,20 @@
+# Mac files
 .DS_Store
+
+# Build output
 /lib
+
+# Nodejs modules
 node_modules
+
+# log files
 *.log
+
+# story-book files
 storybook-static
+
+# Rollup files
+.rpt2_cache
+
+# dot-env files
+.env

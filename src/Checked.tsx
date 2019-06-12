@@ -25,7 +25,9 @@ export const Checked = () => {
     }
     return (
         <View onClick={handleClick} active={open}>
-            {open ? 'x' : '+'}
+            {open ? '!' : '+'}
         </View>
     )
 }
+
+Checked.displayName = 'Checked'

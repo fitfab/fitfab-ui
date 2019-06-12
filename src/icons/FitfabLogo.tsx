@@ -41,3 +41,5 @@ export const FitfabLogo = styled(SVG)`
     height: ${p => p.height};
     width: ${p => p.width};
 `
+
+FitfabLogo.displayName = 'FitfabLogo'

@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "es6",
-    "lib": ["es5", "es6", "es7", "es2017", "dom"],
+    "target": "esnext",
+    "module": "esnext",
+    "declarationDir": "./lib/types",
     "declaration": true,
     "outDir": "./lib",
     "strict": true,
     "sourceMap": true,
     "allowJs": false,
-    "jsx": "preserve",
+    "jsx": "react",
     "moduleResolution": "node",
     "noImplicitReturns": true,
     "noImplicitThis": true,
