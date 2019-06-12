@@ -3,10 +3,10 @@ import React from 'react'
 import styled from 'styled-components'
 
 export interface FitfabProps {
-    brandColor: string
-    defaultColor: string
-    width: string
-    height: string
+    brandColor?: string
+    defaultColor?: string
+    width?: string
+    height?: string
 }
 const SVG: React.SFC<FitfabProps> = props => {
     const {
@@ -41,3 +41,5 @@ export const FitfabLogo = styled(SVG)`
     height: ${p => p.height};
     width: ${p => p.width};
 `
+
+FitfabLogo.displayName = 'FitfabLogo'

@@ -1,2 +1,2 @@
-export * from './pretty-date'
-export * from './FitfabLogo'
+export * from './utils/pretty-date'
+export * from './icon/FitfabLogo'

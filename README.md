@@ -1,10 +1,9 @@
-### Fitfab-UI Component with styled-component
+# Fitfab-UI Component (Rollup, TypeScript, Babel, React styled-components)
 
 With this release, I target ES6 JavaScript. ES6 is much closer to TypeScript and produces less code, which means faster loading times.
 
-This Library is meant to be used in modern browsers -- I don't support IE11. I want to move forward.
-
-Other decisions: [read more here](./decisions.md)
+-   This Library is meant to be used in modern browsers -- It doesn't support IE11.
+-   Other decisions: [read more here](./DECISIONS.md)
 
 _peerDependencies_:
 
@@ -26,7 +25,7 @@ const pretty = prettyDate('8/2/2019')
 
 See the [Storybook setup](./STORYBOOK_SETUP.md)
 
-### using local copy of fitfab-ui
+## Using local copy of fitfab-ui
 
 _NPM LINK_
 
@@ -39,27 +38,47 @@ Then start using as normal:
 
 ---
 
-### Typescript Version
+## Script CMD explained.
 
 _NPM CMD:_ [read about npm scripts](https://docs.npmjs.com/misc/scripts)
 
-`"prepare" : "npm run build"` --
-run both BEFORE the package is packed and published, and on local npm install.
+`"prepare" : "npm run build"`
 
-So here I build library
+-   Run both BEFORE the package is packed and published, and on local npm install -- So here I build library
 
-`"prepublishOnly": "npm test && npm run lint"` -- this run BEFORE the package is prepared and packed, ONLY on npm publish.
+`"prepublishOnly": "npm test && npm run lint"`
 
-A good place to verify that tests & linting rules are passing.
+-   This run BEFORE the package is prepared and packed, ONLY on npm publish.
 
-`"preversion": "npm run lint"` -- run BEFORE bumping the package version.
+-   A good place to verify that linting rules and tests are passing.
 
-Ensure that the new version DOES NOT have bad code.
+`"preversion": "npm run lint"`
 
-`"version": "npm run format && git add -A src"` -- run AFTER bumping the package version, but BEFORE commit.
+-   Run BEFORE bumping the package version.
 
-Again ensuring that code still good when increasing the version via the CMD: `npm version <patch | minor | major>`
+-   Ensure that the new version DOES NOT have bad code.
 
-`"postversion": "git push && git push --tags"` -- run AFTER bumping the package version, and AFTER commit.
+`"version": "npm run format && git add -A src"`
 
-So here I push the commit and tags
+-   Run AFTER bumping the package version, but BEFORE commit.
+
+-   Again ensuring that code still good when increasing the version.
+-   CMD: `npm version <patch | minor | major>`
+
+`"postversion": "git push && git push --tags"`
+
+-   Run AFTER bumping the package version, and AFTER commit.
+
+-   So here I push the commit and tags
+
+## Rollup TypeScript & Babel setup
+
+-   [Microsoft TypeScript Babel Setup](https://github.com/microsoft/TypeScript-Babel-Starter)
+
+-   Styled-components: [babel-plugin-styled-components](https://www.styled-components.com/docs/tooling#usage)
+
+## Jest & Enzyme setup
+
+NOTE: make sure that jsx is set to react `{ "jsx": "react" }` within the **tsconfig.json** file.
+
+-   Reference: [React TS Jest Enzyme Setup](https://github.com/cedrickchee/react-typescript-jest-enzyme-testing)
