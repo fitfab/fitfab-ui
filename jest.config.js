@@ -42,5 +42,5 @@ module.exports = {
     /**
      * Jest setup for Enzime
      */
-    setupFilesAfterEnv: ['<rootDir>/src/setup.enzyme.ts'],
+    setupFilesAfterEnv: ['<rootDir>/config/setup.enzyme.ts'],
 }
