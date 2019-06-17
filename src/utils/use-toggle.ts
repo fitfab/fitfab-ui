@@ -1,8 +1,13 @@
 import { useCallback, useState } from 'react'
 
-export const useToggle = (initial: boolean): [boolean, (s: boolean) => void] => {
+export const useToggle = (initial: boolean): [boolean, (status: boolean) => void] => {
     const [open, setOpen] = useState(initial)
-    return [open, useCallback(() => setOpen((status: boolean) => !status), [status])]
+    /**
+     * TODO: figure out how to use useCallback without warning for shadowed-variable
+     * return [open, useCallback((open) => setOpen((open) => !open), [open])]
+     */
+    // tslint:disable-next-line:no-shadowed-variable
+    return [open, useCallback(open => setOpen(open => !open), [open])]
 }
 
 /**
