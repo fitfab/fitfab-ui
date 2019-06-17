@@ -4,20 +4,17 @@ import { CheckBox } from './CheckBox'
 
 afterEach(cleanup)
 
-test('Render CheckBox and toggle behavior', () => {
+test('Render CheckBox', () => {
     const { container } = render(<CheckBox />)
-    // Snapshot demo
-    expect(container.firstChild).toMatchSnapshot()
+    expect(container).toMatchSnapshot()
 })
 
 test('Toggle CheckBox ', () => {
     const { container } = render(<CheckBox />)
-    const input = container.firstChild
+    const label = container.firstChild
+    expect(label!.textContent).toContain('no')
 
-    expect(input!.textContent).toContain('no')
-
-    fireEvent.click(input!.nextSibling!.nextSibling as Element)
+    fireEvent.click(label!.nextSibling!.nextSibling as Element)
     waitForDomChange({ container })
-
-    expect(input!.textContent).toContain('yes')
+    expect(label!.textContent).toContain('yes')
 })

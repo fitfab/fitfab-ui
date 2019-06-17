@@ -1,7 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render CheckBox and toggle behavior 1`] = `
-<label>
-  no
-</label>
+exports[`Render CheckBox 1`] = `
+<div>
+  <label>
+    no
+  </label>
+  :
+  <input
+    name="open"
+    type="checkbox"
+  />
+</div>
 `;
