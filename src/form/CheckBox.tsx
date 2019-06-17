@@ -3,7 +3,6 @@ import { useToggle } from '../utils/use-toggle'
 
 export const CheckBox: React.FC = () => {
     const [isChecked, toggle] = useToggle(false)
-    console.log('isChecked: ', isChecked)
     return (
         <React.Fragment>
             <label>{isChecked ? 'yes' : 'no'}</label>:
