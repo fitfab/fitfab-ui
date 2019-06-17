@@ -2,6 +2,8 @@ import { useCallback, useState } from 'react'
 
 export const useToggle = (initial: boolean): [boolean, (status: boolean) => void] => {
     const [open, setOpen] = useState(initial)
+    console.log('open: ', open)
+
     /**
      * TODO: figure out how to use useCallback without warning for shadowed-variable
      * return [open, useCallback((open) => setOpen((open) => !open), [open])]

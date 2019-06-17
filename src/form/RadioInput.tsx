@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useToggle } from '../utils/use-toggle'
 
-const CheckBoxView = styled.input`
-    &[type='checkbox'] {
+const RadioInputView = styled.input`
+    &[type='radio'] {
         display: none;
     }
 
@@ -17,7 +18,7 @@ const CheckBoxView = styled.input`
     }
     & + label:before {
         border: 1px solid #999;
-        border-radius: 4px;
+        border-radius: 24px;
         display: block;
         content: '';
         height: 24px;
@@ -42,18 +43,19 @@ const CheckBoxView = styled.input`
     }
 `
 
-export interface CheckBoxProps {
+export interface RadioInputProps {
     name?: string
     id?: string
     value?: string
-    label?: string
+    selected?: boolean
 }
 
-export const CheckBox: React.FC<CheckBoxProps> = (props: CheckBoxProps) => {
+export const RadioInput: React.FC<RadioInputProps> = (props: RadioInputProps) => {
+    const { name, id, value } = props
     return (
         <React.Fragment>
-            <CheckBoxView name={props.name} id={props.id} type="checkbox" />
-            <label htmlFor={props.id}>{props.label}</label>
+            <RadioInputView name={name} id={id} type="radio" value={value} />
+            <label htmlFor={id}>{value}</label>
         </React.Fragment>
     )
 }

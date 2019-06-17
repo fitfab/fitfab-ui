@@ -2,13 +2,12 @@
 
 exports[`Render CheckBox 1`] = `
 <div>
+  <input
+    class="sc-bdVaJa bWmhty"
+    type="checkbox"
+  />
   <label>
     no
   </label>
-  :
-  <input
-    name="open"
-    type="checkbox"
-  />
 </div>
 `;
