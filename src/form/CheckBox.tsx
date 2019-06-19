@@ -7,11 +7,12 @@ const CheckBoxView = styled.input`
     }
 
     & + label {
+        box-sizing: border-box;
         display: inline-block;
         height: 24px;
-        line-height: 2;
+        line-height: 24px;
         min-width: auto;
-        margin: 0 0 0 40px;
+        margin: 0 12px 0 40px;
         cursor: pointer;
         position: relative;
     }

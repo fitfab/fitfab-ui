@@ -8,11 +8,12 @@ const RadioInputView = styled.input`
     }
 
     & + label {
+        box-sizing: border-box;
         display: inline-block;
         height: 24px;
-        line-height: 2;
+        line-height: 24px;
         min-width: auto;
-        margin: 0 0 0 40px;
+        margin: 0 12px 0 40px;
         cursor: pointer;
         position: relative;
     }
@@ -28,17 +29,20 @@ const RadioInputView = styled.input`
         position: absolute;
         left: -40px;
     }
+    &:checked + label:before {
+        border-width: 2px;
+    }
     &:checked + label:after {
+        background: green;
         display: block;
         content: '';
-        border-left: 2px solid green;
-        border-bottom: 2px solid green;
+        border-radius: 12px;
         color: green;
-        height: 4px;
+        height: 12px;
         width: 12px;
-        transform: rotate(-45deg);
+
         position: absolute;
-        left: -34px;
+        left: -32px;
         top: 8px;
     }
 `

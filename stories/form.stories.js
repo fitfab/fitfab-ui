@@ -17,7 +17,7 @@ storiesOf('Form', module)
                     aria-label="cheked"
                     name="openTrigger"
                     value="yes"
-                    label="yes"
+                    label="yes, blue is my color"
                 />
                 <CheckBox
                     id="no"
@@ -25,7 +25,7 @@ storiesOf('Form', module)
                     aria-label="cheked"
                     name="openTrigger"
                     value="no"
-                    label="no"
+                    label="no, I do not like blue"
                 />
             </div>
         )
@@ -38,10 +38,16 @@ storiesOf('Form', module)
                     aria-label="radio"
                     name="yesLikeCode"
                     id="yes"
-                    value="yes?"
+                    value="React virtual DOM"
                     selected={true}
                 />
-                <RadioInput className="js_triggerRadio" aria-label="radio" name="yesLikeCode" id="no" value="no?" />
+                <RadioInput
+                    className="js_triggerRadio"
+                    aria-label="radio"
+                    name="yesLikeCode"
+                    id="no"
+                    value="Svelte compiler"
+                />
             </div>
         )
     })
