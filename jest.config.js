@@ -37,10 +37,15 @@ module.exports = {
     /**
      * setup snapshot support with Enzyme
      */
-    snapshotSerializers: ['enzyme-to-json/serializer'],
+    // snapshotSerializers: ['enzyme-to-json/serializer'],
 
     /**
      * Jest setup for Enzime
      */
-    setupFilesAfterEnv: ['<rootDir>/config/setup.enzyme.ts'],
+    // setupFilesAfterEnv: ['<rootDir>/config/enzyme.setup.ts'],
+
+    /***
+     * Setup React-testing-library
+     */
+    setupFilesAfterEnv: ['<rootDir>/config/rtl.setup.ts'],
 }
