@@ -41,6 +41,8 @@
   "homepage": "https://github.com/fitfab/fitfab-ui#readme",
   "devDependencies": {
     "//1": "<!-- BEGIN @babel -->",
+    "//2": "<!-- BEGIN @storybook -->",
+    "//3": "<!-- BEGIN @types -->",
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
@@ -48,13 +50,11 @@
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
-    "//2": "<!-- BEGIN @storybook -->",
     "@storybook/addon-actions": "^5.0.1",
     "@storybook/addon-knobs": "^5.0.1",
     "@storybook/addon-links": "^5.0.1",
     "@storybook/addons": "^5.0.1",
     "@storybook/react": "^5.0.1",
-    "//3": "<!-- BEGIN @types -->",
     "@types/enzyme": "^3.9.3",
     "@types/enzyme-adapter-react-16": "^1.0.5",
     "@types/jest": "^24.0.9",
@@ -80,7 +80,7 @@
     "ts-jest": "^24.0.0",
     "tslint": "^5.13.1",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "3.5.1"
+    "typescript": "^3.5.2"
   },
   "peerDependencies": {
     "react": "^16.8.4",
