@@ -76,7 +76,7 @@
     "ts-jest": "^24.0.0",
     "tslint": "^5.13.1",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "3.5.1"
+    "typescript": "^3.5.2"
   },
   "peerDependencies": {
     "react": "^16.8.4",
