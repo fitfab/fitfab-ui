@@ -82,3 +82,24 @@ _NPM CMD:_ [read about npm scripts](https://docs.npmjs.com/misc/scripts)
 NOTE: make sure that jsx is set to react `{ "jsx": "react" }` within the **tsconfig.json** file.
 
 -   Reference: [React TS Jest Enzyme Setup](https://github.com/cedrickchee/react-typescript-jest-enzyme-testing)
+
+## Jest & React testing library setup
+
+-   create the file `rtl.setup.ts`
+
+```ts
+// See https://github.com/kentcdodds/react-testing-library#global-config
+import '@testing-library/react/cleanup-after-each'
+import 'jest-dom/extend-expect'
+```
+
+-   Then add it to jest.config.js -- on this project I have a `/config` folder where the rtl.setup.ts lives.
+
+```ts
+    /***
+     * Setup React-testing-library
+     */
+    setupFilesAfterEnv: ['<rootDir>/config/rtl.setup.ts'],
+```
+
+-   Reference: [@testing-library/react](https://testing-library.com/docs/react-testing-library/intro)

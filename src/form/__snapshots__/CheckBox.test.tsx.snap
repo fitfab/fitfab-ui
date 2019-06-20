@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render CheckBox 1`] = `
+<div>
+  <input
+    class="sc-bdVaJa bfEAcK"
+    type="checkbox"
+  />
+  <label>
+    no
+  </label>
+</div>
+`;
