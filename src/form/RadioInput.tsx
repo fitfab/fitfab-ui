@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { useToggle } from '../utils/use-toggle'
 
 const RadioInputView = styled.input`
     &[type='radio'] {
