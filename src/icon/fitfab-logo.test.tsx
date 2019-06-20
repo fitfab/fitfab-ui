@@ -1,16 +1,11 @@
-import { shallow } from 'enzyme'
+import { cleanup, render } from '@testing-library/react'
 import React from 'react'
 import { FitfabLogo } from './FitfabLogo'
+afterEach(cleanup)
 
 test('Render Fitfab logo with default props', () => {
-    const wrapper = shallow(<FitfabLogo />)
+    const { container } = render(<FitfabLogo />)
     // Snapshot demo
-    expect(wrapper).toMatchSnapshot()
-})
-
-test('Render Fitfab logo with custom props', () => {
-    const wrapper = shallow(<FitfabLogo width="150" brandColor="green" />)
-
-    expect(wrapper.props().brandColor).toEqual('green')
-    expect(wrapper.props().width).toEqual('150')
+    expect(container.firstChild).toMatchSnapshot()
+    expect(container.firstChild!.nodeName).toBe('svg')
 })
