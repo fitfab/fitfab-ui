@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { useToggle } from '../utils/use-toggle'
 
 const RadioInputView = styled.input`
     &[type='radio'] {
@@ -30,7 +29,8 @@ const RadioInputView = styled.input`
         left: -40px;
     }
     &:checked + label:before {
-        border-width: 2px;
+        box-shadow: inset 0px 0px 1px 1px green;
+        border-color: green;
     }
     &:checked + label:after {
         background: green;
@@ -42,8 +42,8 @@ const RadioInputView = styled.input`
         width: 12px;
 
         position: absolute;
-        left: -32px;
-        top: 8px;
+        left: -33px;
+        top: 7px;
     }
 `
 

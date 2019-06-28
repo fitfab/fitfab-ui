@@ -28,6 +28,10 @@ const CheckBoxView = styled.input`
         position: absolute;
         left: -40px;
     }
+    &:checked + label:before {
+        box-shadow: inset 0px 0px 1px 1px green;
+        border-color: green;
+    }
     &:checked + label:after {
         display: block;
         content: '';
@@ -38,8 +42,8 @@ const CheckBoxView = styled.input`
         width: 12px;
         transform: rotate(-45deg);
         position: absolute;
-        left: -34px;
-        top: 8px;
+        left: -33px;
+        top: 9px;
     }
 `
 
