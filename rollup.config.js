@@ -2,6 +2,7 @@ import analyze from 'rollup-plugin-analyzer'
 import resolve from 'rollup-plugin-node-resolve'
 import babel from 'rollup-plugin-babel'
 import external from 'rollup-plugin-peer-deps-external'
+import { terser } from 'rollup-plugin-terser'
 import pkg from './package.json'
 
 const extensions = ['.ts', '.tsx']
@@ -15,6 +16,7 @@ export default {
 
         // Compile TypeScript/JavaScript files
         babel({ extensions, include: ['src/**/*'] }),
+        terser(),
         analyze({ limit: 0 }),
     ],
 
