@@ -103,3 +103,4 @@ import 'jest-dom/extend-expect'
 ```
 
 -   Reference: [@testing-library/react](https://testing-library.com/docs/react-testing-library/intro)
+-   CheatSheet: [@testing-library/react](https://testing-library.com/docs/react-testing-library/cheatsheet)
