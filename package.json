@@ -1,7 +1,23 @@
 {
   "name": "fitfab-ui",
   "version": "1.0.1",
+  "author": "Miguel Julio <miguelajulio@gmail.com> (http://fitfab.com)",
   "description": "fitfab UI elements",
+  "keywords": [
+    "react",
+    "styled-components",
+    "UI",
+    "fitfab-ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fitfab/fitfab-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fitfab/fitfab-ui/issues"
+  },
+  "homepage": "https://github.com/fitfab/fitfab-ui#readme",
+  "license": "MIT",
   "main": "./lib/index.js",
   "module": "./lib/index.js",
   "types": "lib/index.d.ts",
@@ -28,17 +44,6 @@
     "build-storybook": "build-storybook",
     "release": "standard-version"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fitfab/fitfab-ui.git"
-  },
-  "keywords": [],
-  "author": "Miguel Julio <miguelajulio@gmail.com> (http://fitfab.com)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/fitfab/fitfab-ui/issues"
-  },
-  "homepage": "https://github.com/fitfab/fitfab-ui#readme",
   "devDependencies": {
     "@babel/cli": "7.4.4",
     "@babel/core": "7.4.5",
