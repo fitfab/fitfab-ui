@@ -64,7 +64,7 @@
     "prettier": "1.18.2",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "rollup": "1.16.2",
+    "rollup": "1.17.0",
     "rollup-plugin-analyzer": "3.1.2",
     "rollup-plugin-babel": "4.3.3",
     "rollup-plugin-node-resolve": "5.2.0",
