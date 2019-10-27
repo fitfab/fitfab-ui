@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render RadioInput 1`] = `
+<div>
+  <input
+    class="sc-bdVaJa bSYQVI"
+    name="one"
+    type="radio"
+    value=""
+  />
+  <label />
+</div>
+`;
