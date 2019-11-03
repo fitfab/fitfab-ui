@@ -34,7 +34,7 @@
     "url": "git+https://github.com/fitfab/fitfab-ui.git"
   },
   "keywords": [],
-  "author": "Miguel Julio <miguelajulio@gmail.com> (http://fitfab.com)",
+  "author": "Miguel Julio <migueljulio.developer.com> (http://fitfab.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fitfab/fitfab-ui/issues"
@@ -65,8 +65,8 @@
     "prettier": "1.18.2",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "rollup": "^1.25.2",
-    "rollup-plugin-analyzer": "^3.2.1",
+    "rollup": "^1.26.3",
+    "rollup-plugin-analyzer": "^3.2.2",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
