@@ -19,7 +19,7 @@ export default {
     ],
 
     output: [
-        // only exporting es modules
+        // Only exporting es modules
         {
             file: pkg.module,
             format: 'es',

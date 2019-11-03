@@ -104,3 +104,25 @@ import 'jest-dom/extend-expect'
 
 -   Reference: [@testing-library/react](https://testing-library.com/docs/react-testing-library/intro)
 -   CheatSheet: [@testing-library/react](https://testing-library.com/docs/react-testing-library/cheatsheet)
+
+### Three-Shaking Gotcha
+
+if you were to use `export default` , the bundle would not be three shaken.
+
+```js
+// src/utils.js
+export default {
+    alert: msg => {
+        console.log(msg)
+    },
+    sum: (x, y) => x + y,
+}
+
+// src/main.js
+import utils from './utils'
+
+const total = utils.sum(7, 4)
+console.log(`This is the total: ${total}`)
+```
+
+The code will include `alert` eventhough it was NOT use in the main.js file.
