@@ -40,7 +40,6 @@ class ModalDemoContainer extends React.Component {
         })
     }
     render() {
-        console.log('render: ModalDemoContainer', this.state.show)
         return (
             <>
                 <button onClick={this.toggleModal}>Show Modal{this.state.show ? 'open' : 'close'}</button>
