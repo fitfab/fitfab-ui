@@ -1,14 +1,16 @@
 import React from 'react'
 
-export function useClickOutside(ref: React.RefObject<HTMLDivElement>, handler: () => {}) {
+export function useClickOutside(ref: React.RefObject<HTMLDivElement>, cb: () => void, active: boolean) {
     React.useEffect(() => {
-        const listener = (event: any) => {
-            // Do nothing if clicking ref's element or descendent elements
-            if (!ref.current || ref.current.contains(event.target)) {
-                return
-            }
+        const listener = (event: Event) => {
+            if (active) {
+                // Do nothing if clicking ref's element or descendent elements
+                if (!ref.current || ref.current.contains(event.target as Element)) {
+                    return
+                }
 
-            handler()
+                cb()
+            }
         }
 
         document.addEventListener('mousedown', listener)
@@ -18,5 +20,5 @@ export function useClickOutside(ref: React.RefObject<HTMLDivElement>, handler: (
             document.removeEventListener('mousedown', listener)
             document.removeEventListener('touchstart', listener)
         }
-    }, []) // Empty array ensures that effect is only run on mount and unmount
+    }, [ref, cb, active]) // Empty array ensures that effect is only run on mount and unmount
 }
