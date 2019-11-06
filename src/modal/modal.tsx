@@ -1,7 +1,7 @@
 import React from 'react'
 import { CloseIcon } from '../icon/Close'
 import { useClickOutside } from '../utils/useClickOutside'
-import { CloseButton, Content, ModalView, Title } from './partial'
+import { BackDrop, CloseButton, Content, ModalView, Title } from './partial'
 
 export interface ModalProps {
     open: boolean
@@ -9,9 +9,11 @@ export interface ModalProps {
     width?: string
     height?: string
     title?: string
+    children?: React.ReactNode
 }
 
-export const Modal: React.FC<ModalProps> = ({ open, toggleOpen, children, title }) => {
+// export const Modal: React.SFC<ModalProps> = ({ open, toggleOpen, children, title }) => {
+export function Modal({ open, toggleOpen, children, title }: ModalProps) {
     const ref = React.useRef<HTMLDivElement>(null)
     const handleClick = (e: React.SyntheticEvent<HTMLElement>) => {
         e.preventDefault()
@@ -21,13 +23,16 @@ export const Modal: React.FC<ModalProps> = ({ open, toggleOpen, children, title 
     useClickOutside(ref, toggleOpen, open)
     return (
         open && (
-            <ModalView ref={ref}>
-                {title && <Title>{title}</Title>}
-                <CloseButton onClick={handleClick}>
-                    <CloseIcon height="16px" width="16px;" />
-                </CloseButton>
-                <Content>{children}</Content>
-            </ModalView>
+            <>
+                <BackDrop />
+                <ModalView ref={ref}>
+                    {title && <Title>{title}</Title>}
+                    <CloseButton onClick={handleClick}>
+                        <CloseIcon height="16px" width="16px;" />
+                    </CloseButton>
+                    <Content>{children}</Content>
+                </ModalView>
+            </>
         )
     )
 }

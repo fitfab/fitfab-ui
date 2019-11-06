@@ -1,7 +1,18 @@
 import styled from 'styled-components'
 
+export const BackDrop = styled.div`
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+`
+
 export const ModalView = styled.div`
-    border: 1px solid #ccc;
+    background: #fff;
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.3);
     border-radius: 4px;
     box-sizing: border-box;
     position: absolute;
