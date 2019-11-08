@@ -1,6 +1,8 @@
 import React from 'react'
 import { CloseIcon } from '../icon/Close'
 import { useClickOutside } from '../utils/useClickOutside'
+import { useLockBodyScroll } from '../utils/use-lock-body-scroll'
+
 import { BackDrop, CloseButton, Content, ModalView, Title } from './partial'
 
 export interface ModalProps {
@@ -12,7 +14,6 @@ export interface ModalProps {
     children?: React.ReactNode
 }
 
-// export const Modal: React.SFC<ModalProps> = ({ open, toggleOpen, children, title }) => {
 export function Modal({ open, toggleOpen, children, title }: ModalProps) {
     const ref = React.useRef<HTMLDivElement>(null)
     const handleClick = (e: React.SyntheticEvent<HTMLElement>) => {
@@ -20,6 +21,7 @@ export function Modal({ open, toggleOpen, children, title }: ModalProps) {
         toggleOpen()
     }
 
+    useLockBodyScroll(open)
     useClickOutside(ref, toggleOpen, open)
     return (
         open && (
