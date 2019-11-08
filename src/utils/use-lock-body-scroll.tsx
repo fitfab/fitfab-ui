@@ -1,4 +1,5 @@
 import React from 'react'
+// Based from the collection of hooks https://usehooks.com/
 export function useLockBodyScroll(active: boolean) {
     React.useLayoutEffect(() => {
         // Get original body overflow
