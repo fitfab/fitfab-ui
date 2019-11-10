@@ -14,7 +14,7 @@ export interface ModalProps {
     children?: React.ReactNode
 }
 
-export function Modal({ open, toggleOpen, children, title }: ModalProps) {
+export function Modal({ open, toggleOpen, children, title, width, height }: ModalProps) {
     const ref = React.useRef<HTMLDivElement>(null)
     const handleClick = (e: React.SyntheticEvent<HTMLElement>) => {
         e.preventDefault()
@@ -27,7 +27,7 @@ export function Modal({ open, toggleOpen, children, title }: ModalProps) {
         open && (
             <>
                 <BackDrop />
-                <ModalView ref={ref}>
+                <ModalView ref={ref} width={width} height={height}>
                     {title && <Title>{title}</Title>}
                     <CloseButton onClick={handleClick}>
                         <CloseIcon height="16px" width="16px;" />

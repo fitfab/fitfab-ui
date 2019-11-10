@@ -8,7 +8,7 @@ import { withKnobs, text, boolean, number, object } from '@storybook/addon-knobs
 import { Modal } from '../lib/index'
 
 const DefaultModal = () => {
-    const [open, setOpen] = React.useState(false)
+    const [open, setOpen] = React.useState(true)
     const toggleModal = () => {
         setOpen(!open)
     }
@@ -71,7 +71,7 @@ const DefaultModal = () => {
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum.
             </p>
-            <Modal title="Terms & Conditions" open={open} toggleOpen={toggleModal}>
+            <Modal title="Terms & Conditions" open={open} toggleOpen={toggleModal} width="35vw" height="35vh">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

@@ -9,8 +9,11 @@ export const BackDrop = styled.div`
     left: 0;
     z-index: 0;
 `
-
-export const ModalView = styled.div`
+export interface ModalViewProps {
+    height?: string
+    width?: string
+}
+export const ModalView = styled.div<ModalViewProps>`
     background: #fff;
     box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.3);
     border-radius: 4px;
@@ -19,8 +22,8 @@ export const ModalView = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50vw;
-    height: 50vh;
+    width: ${p => p.width || '50vw'};
+    height: ${p => p.height || '50vh'};
     padding: 16px;
 `
 export const Content = styled.div`
