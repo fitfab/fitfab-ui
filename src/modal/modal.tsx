@@ -26,7 +26,7 @@ export function Modal({ open, toggleOpen, children, title, width, height }: Moda
     return (
         open && (
             <>
-                <BackDrop />
+                <BackDrop open={open} />
                 <ModalView ref={ref} width={width} height={height}>
                     {title && <Title>{title}</Title>}
                     <CloseButton onClick={handleClick}>
