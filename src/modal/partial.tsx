@@ -26,6 +26,9 @@ export const ModalView = styled.div<ModalViewProps>`
     position: absolute;
     top: 50%;
     left: 50%;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
     width: ${p => p.width || '50vw'};
     height: ${p => p.height || '50vh'};
     padding: 16px;
