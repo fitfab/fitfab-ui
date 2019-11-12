@@ -4,5 +4,6 @@
     "postversion",
     "prebuild",
     "preversion"
-  ]
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

@@ -1,4 +1,6 @@
 export * from './utils/pretty-date'
 export * from './icon/FitfabLogo'
+export * from './icon/Close'
 export * from './form/CheckBox'
 export * from './form/RadioInput'
+export * from './modal/modal'
