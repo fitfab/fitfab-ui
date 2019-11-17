@@ -18,7 +18,7 @@ export interface ModalViewProps {
     width?: string
 }
 export const ModalView = styled.div<ModalViewProps>`
-    animation: ${ScaleUP} 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: ${ScaleUP} 0.4s cubic-bezier(0.23, 0.615, 0.23, 1.405) both;
     background: #fff;
     box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.3);
     border-radius: 4px;

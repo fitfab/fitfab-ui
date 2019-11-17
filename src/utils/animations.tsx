@@ -3,7 +3,7 @@ import { keyframes } from 'styled-components'
 export const ScaleUP = keyframes`
 0% {
     transform: scale(0.75) translate(-65%, -65%);
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 100% {
