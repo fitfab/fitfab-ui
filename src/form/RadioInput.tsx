@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Expand } from '../utils/animations'
 
 const RadioInputView = styled.input`
     &[type='radio'] {
@@ -32,6 +33,7 @@ const RadioInputView = styled.input`
         border-width: 2px;
     }
     &:checked + label:after {
+        animation: ${Expand} 0.4s cubic-bezier(0.23, 0.615, 0.23, 1.405) both;
         background: green;
         display: block;
         content: '';
