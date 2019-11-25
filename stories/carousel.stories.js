@@ -12,8 +12,8 @@ const CarouselStory = () => {
     console.log(images)
     return (
         <>
-            <p>hello</p>
-            <CssCarousel width="65%">
+            <h2>Carousel</h2>
+            <CssCarousel width="600px">
                 {images.map((slide, index) => (
                     <img key={index} src={slide.src} alt={slide.alt} width={slide.width} />
                 ))}
