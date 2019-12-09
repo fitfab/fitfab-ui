@@ -1,7 +1,7 @@
 import React from 'react'
-import { CssCarouselProps, Button, Carousel, ViewPort } from './partials'
+import { CssCarouselProps, Button, CarouselView, ViewPort } from './partials'
 
-export const CssCarousel: React.FC<CssCarouselProps> = ({ children, width = '780px', height = '320px' }) => {
+export const Carousel: React.FC<CssCarouselProps> = ({ children, width = '780px', height = '320px' }) => {
     const ref = React.useRef<HTMLDivElement>(null)
     const scrollby = React.useRef(caculateScroll(width))
     const [state, setState] = React.useState({ x: scrollby.current })
@@ -14,23 +14,17 @@ export const CssCarousel: React.FC<CssCarouselProps> = ({ children, width = '780
     }, [state])
 
     function caculateScroll(val: string) {
-        // \d+: Match one or more numbers
-        const out = parseInt(val.match(/(\d+)/)![0]!, 10)
-
-        if (out <= 100) {
-            //   return ref.current.offsetWidth / 2;
-            let x = (window.innerWidth * 25) / 100
-            console.log('x: ', x)
-
-            return x
+        let carouselWidth = parseInt(val.match(/(\d+)/)![0]!, 10)
+        // if width is less than 100 we assume it's percentage base
+        if (carouselWidth <= 100) {
+            carouselWidth = window.innerWidth
         }
-        console.log('out / 2')
-        return out / 2
+        return (carouselWidth * 50) / 100
     }
 
     const direction = (clientX: number) => {
-        const out = window.innerWidth / 2 > clientX ? -scrollby.current : scrollby.current
-        return out
+        const value = window.innerWidth / 2 > clientX ? -scrollby.current : scrollby.current
+        return value
     }
 
     const moveBy = (e: React.MouseEvent<HTMLElement>) => {
@@ -39,10 +33,9 @@ export const CssCarousel: React.FC<CssCarouselProps> = ({ children, width = '780
             x: direction(e.clientX),
         })
     }
-
     return (
         <ViewPort className="viewport" width={width} height={height}>
-            <Carousel ref={ref}>{children}</Carousel>
+            <CarouselView ref={ref}>{children}</CarouselView>
             <Button onClick={moveBy} aria-label="previous"></Button>
             <Button onClick={moveBy} aria-label="next"></Button>
         </ViewPort>

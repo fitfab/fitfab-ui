@@ -8,35 +8,35 @@ export default [
         height: '320px',
     },
     {
-        src: 'https://source.unsplash.com/collection/190727/600x320',
+        src: 'https://source.unsplash.com/collection/190727/780x320',
         alt: 'This is an image',
         caption:
             'Em eratemquam ut offi cium eos elignimusam latur. Conestrum necae di dio eiusapis si sus.it millaciis asit quodit ea voluptat.',
-        width: '600px',
+        width: '780px',
         height: '320px',
     },
     {
-        src: 'https://source.unsplash.com/300x320?city',
+        src: 'https://source.unsplash.com/480x320?city',
         alt: 'This is an image',
         caption:
             'Em eratemquam ut offi cium eos elignimusam latur. Conestrum necae di dio eiusapis si sus.it millaciis asit quodit ea voluptat.',
-        width: '300px',
+        width: '480px',
         height: '320px',
     },
     {
-        src: 'https://source.unsplash.com/600x320?sports',
+        src: 'https://source.unsplash.com/1250x320?sports',
         alt: 'This is an image',
         caption:
             'Em eratemquam ut offi cium eos elignimusam latur. Conestrum necae di dio eiusapis si sus.it millaciis asit quodit ea voluptat.',
-        width: '600px',
+        width: '1250px',
         height: '320px',
     },
     {
-        src: 'https://source.unsplash.com/400x320?nature,water',
+        src: 'https://source.unsplash.com/450x320?nature,water',
         alt: 'This is an image',
         caption:
             'Em eratemquam ut offi cium eos elignimusam latur. Conestrum necae di dio eiusapis si sus.it millaciis asit quodit ea voluptat.',
-        width: '400px',
+        width: '450px',
         height: '320px',
     },
     {
