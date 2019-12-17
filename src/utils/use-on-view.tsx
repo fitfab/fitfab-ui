@@ -18,7 +18,7 @@ export function useOnView({ ref, options }: UseOnViewProps) {
             observer.observe(ref.current)
         }
         return () => {
-            observer.unobserve(ref.current)
+            observer.unobserve(ref.current!)
         }
     }, []) // Empty array ensures that effect is only run on mount and unmount
 
