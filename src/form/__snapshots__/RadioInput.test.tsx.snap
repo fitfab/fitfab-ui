@@ -3,7 +3,7 @@
 exports[`Render RadioInput 1`] = `
 <div>
   <input
-    class="sc-bdVaJa bSYQVI"
+    class="sc-bdVaJa jmfMFM"
     name="one"
     type="radio"
     value=""
