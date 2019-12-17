@@ -4,7 +4,6 @@ import styled from 'styled-components'
 export interface CssCarouselProps {
     width?: string
     height?: string
-    moveBy?: number
 }
 
 export const Button = styled.button`
@@ -44,11 +43,9 @@ export const CarouselView = styled.div<CssCarouselProps>`
     padding: 0 0 16px 0;
     display: flex;
     overflow-x: scroll;
-    /* scroll-padding: 0 50%; */
     scroll-snap-type: x mandatory;
     margin: 0 auto;
-    transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    transform: translateX(${p => (p.moveBy ? `${p.moveBy}%` : '')});
+    transform: translate3d(0, 0, 0); /* force GPU */
 
     > * {
         scroll-snap-align: center;

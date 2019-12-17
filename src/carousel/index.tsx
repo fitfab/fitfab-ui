@@ -1,7 +1,11 @@
 import React from 'react'
 import { CssCarouselProps, Button, CarouselView, ViewPort } from './partials'
 
-export const Carousel: React.FC<CssCarouselProps> = ({ children, width = '780px', height = '320px' }) => {
+export const Carousel: React.FC<CssCarouselProps> = ({
+    children,
+    width = '780px',
+    height = '320px',
+}) => {
     const ref = React.useRef<HTMLDivElement>(null)
     const scrollby = React.useRef(caculateScroll(width))
     const [state, setState] = React.useState({ x: scrollby.current })
@@ -23,8 +27,9 @@ export const Carousel: React.FC<CssCarouselProps> = ({ children, width = '780px'
     }
 
     const direction = (clientX: number) => {
-        const value = window.innerWidth / 2 > clientX ? -scrollby.current : scrollby.current
-        return value
+        return window.innerWidth / 2 > clientX
+            ? -scrollby.current
+            : scrollby.current
     }
 
     const moveBy = (e: React.MouseEvent<HTMLElement>) => {
