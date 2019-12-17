@@ -1,6 +1,6 @@
 {
   "name": "fitfab-ui",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "fitfab UI elements",
   "sideEffects": false,
   "main": "./lib/index.js",
