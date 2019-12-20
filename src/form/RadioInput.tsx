@@ -30,7 +30,7 @@ const RadioInputView = styled.input`
         left: -40px;
     }
     &:checked + label:before {
-        border-width: 2px;
+        box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.4);
     }
     &:checked + label:after {
         animation: ${Expand} 0.4s cubic-bezier(0.23, 0.615, 0.23, 1.405) both;
@@ -43,8 +43,8 @@ const RadioInputView = styled.input`
         width: 12px;
 
         position: absolute;
-        left: -32px;
-        top: 8px;
+        left: -33px;
+        top: 7px;
     }
 `
 
@@ -55,7 +55,7 @@ export interface RadioInputProps {
     selected?: boolean
 }
 
-export const RadioInput: React.FC<RadioInputProps> = (props: RadioInputProps) => {
+export const RadioInput: React.FC<RadioInputProps> = props => {
     const { name, id, value } = props
     return (
         <React.Fragment>

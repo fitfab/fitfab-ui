@@ -14,19 +14,25 @@ export interface ModalProps {
     children?: React.ReactNode
 }
 
-export function Modal({ open, toggleOpen, children, title, width, height }: ModalProps) {
+export function Modal({
+    open,
+    toggleOpen,
+    children,
+    title,
+    width,
+    height,
+}: ModalProps) {
     const ref = React.useRef<HTMLDivElement>(null)
+    useLockBodyScroll(open)
+    useClickOutside(ref, toggleOpen, open)
     const handleClick = (e: React.SyntheticEvent<HTMLElement>) => {
         e.preventDefault()
         toggleOpen()
     }
 
-    useLockBodyScroll(open)
-    useClickOutside(ref, toggleOpen, open)
     return (
         open && (
-            <>
-                <BackDrop open={open} />
+            <BackDrop open={open}>
                 <ModalView ref={ref} width={width} height={height}>
                     {title && <Title>{title}</Title>}
                     <CloseButton onClick={handleClick}>
@@ -34,7 +40,7 @@ export function Modal({ open, toggleOpen, children, title, width, height }: Moda
                     </CloseButton>
                     <Content>{children}</Content>
                 </ModalView>
-            </>
+            </BackDrop>
         )
     )
 }
