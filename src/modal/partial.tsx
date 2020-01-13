@@ -50,6 +50,7 @@ export const Title = styled.h2`
 
 export const CloseButton = styled.button`
     border: none;
+    cursor: pointer;
     display: block;
     position: absolute;
     top: 16px;
