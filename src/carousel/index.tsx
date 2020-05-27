@@ -8,7 +8,7 @@ export const Carousel: React.FC<CssCarouselProps> = ({
 }) => {
     const ref = React.useRef<HTMLDivElement>(null)
     const scrollby = React.useRef(caculateScroll(width))
-    const [state, setState] = React.useState({ x: scrollby.current })
+    const [state, setState] = React.useState({ x: 0 })
 
     React.useEffect(() => {
         ref.current!.scrollBy({

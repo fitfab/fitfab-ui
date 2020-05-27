@@ -40,11 +40,12 @@ export const Button = styled.button`
     }
 `
 export const CarouselView = styled.div<CssCarouselProps>`
-    padding: 0 0 16px 0;
     display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
+    height: 100%;
     margin: 0 auto;
+    overflow-x: scroll;
+    padding: 0 0 16px 0;
+    scroll-snap-type: x mandatory;
     transform: translate3d(0, 0, 0); /* force GPU */
 
     > * {
