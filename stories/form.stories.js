@@ -5,9 +5,23 @@ import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
 import { withKnobs, text, boolean, number, object } from '@storybook/addon-knobs'
 
-import { CheckBox, RadioInput } from '../lib/index'
+import { CheckBox, RadioInput, TextInput } from '../lib/index'
 
 storiesOf('Form', module)
+.add('Text Input', () => {
+    return (
+        <div>
+            <TextInput
+                className="js_inputName"
+                name="firstname"
+                value=""
+                label="First Name"
+                required
+                autocomplete
+            />
+        </div>
+    )
+})
     .add('CheckBox', () => {
         return (
             <div>
