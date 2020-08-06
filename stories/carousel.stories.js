@@ -1,9 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
 import { storiesOf } from '@storybook/react'
-import { action } from '@storybook/addon-actions'
-import { linkTo } from '@storybook/addon-links'
-import { withKnobs, text, boolean, number, object } from '@storybook/addon-knobs'
 
 import { Carousel } from '../lib/index'
 import images from './data/slides'
