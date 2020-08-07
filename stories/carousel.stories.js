@@ -1,10 +1,9 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
 
 import { Carousel } from '../lib/index'
 import images from './data/slides'
 
-export default { title: 'Carousel/sizes' };
+export default { title: 'Carousel' };
 
 export const carouselWide = ()=> (
 <Carousel width="100%">

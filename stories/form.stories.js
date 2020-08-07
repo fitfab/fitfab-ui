@@ -2,6 +2,7 @@ import React from 'react'
 import { CheckBox, RadioInput, TextInput } from '../lib/index'
 
 export default { title: 'Form/inputs' };
+
 export const textInput = ()=> (
     <TextInput
         className="js_inputName"
