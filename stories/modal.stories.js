@@ -1,10 +1,9 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
-
-
 import { Modal } from '../lib/index'
 
-const DefaultModal = () => {
+
+export default { title: 'Modal'}
+export const DefaultModal = ()=> {
     const [open, setOpen] = React.useState(true)
     const toggleModal = () => {
         setOpen(!open)
@@ -21,7 +20,8 @@ const DefaultModal = () => {
                 open modal
             </button>
 
-            <Modal title="Terms & Conditions" open={open} toggleOpen={toggleModal} width="60vw" height="50vh">
+            <Modal title="Terms & Conditions" open={open} toggleOpen={toggleModal} width="50vw" height="50vh">
+                <img src="https://source.unsplash.com/sport/780x320" alt="image detail" width="100%" />
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -47,11 +47,4 @@ const DefaultModal = () => {
         </>
     )
 }
-
-storiesOf('Modal', module).add('default', () => {
-    return (
-        <div>
-            <DefaultModal />
-        </div>
-    )
-})
+    
