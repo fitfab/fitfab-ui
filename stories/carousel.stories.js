@@ -3,7 +3,7 @@ import React from 'react'
 import { Carousel } from '../lib/index'
 import images from './data/slides'
 
-export default { title: 'Carousel' };
+export default { title: 'Carousel', component: Carousel };
 
 export const carouselWide = ()=> (
 <Carousel width="100%">

@@ -1,10 +1,5 @@
-// import React from "react";
 import styled from 'styled-components'
-
-export interface CssCarouselProps {
-    width?: string
-    height?: string
-}
+import {CarouselProps} from './index'
 
 export const Button = styled.button`
     background: transparent;
@@ -39,7 +34,7 @@ export const Button = styled.button`
         right: 16px;
     }
 `
-export const CarouselView = styled.div<CssCarouselProps>`
+export const CarouselView = styled.div<CarouselProps>`
     display: flex;
     height: 100%;
     margin: 0 auto;
@@ -54,7 +49,7 @@ export const CarouselView = styled.div<CssCarouselProps>`
         margin-right: 1rem;
     }
 `
-export const ViewPort = styled.div<CssCarouselProps>`
+export const ViewPort = styled.div<CarouselProps>`
     width: ${p => p.width};
     height: ${p => p.height};
     margin: auto;

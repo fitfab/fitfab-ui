@@ -1,7 +1,12 @@
 import React from 'react'
-import { CssCarouselProps, Button, CarouselView, ViewPort } from './partials'
+import { Button, CarouselView, ViewPort } from './partials'
 
-export const Carousel: React.FC<CssCarouselProps> = ({
+export interface CarouselProps {
+    width?: string
+    height?: string
+}
+
+export const Carousel: React.FC<CarouselProps> = ({
     children,
     width = '780px',
     height = '320px',

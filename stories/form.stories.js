@@ -1,5 +1,5 @@
 import React from 'react'
-import { CheckBox, RadioInput, TextInput } from '../lib/index'
+import { CheckBox, RadioInput, TextInput, SelectInput } from '../lib/index'
 
 export default { title: 'Form/inputs' };
 
@@ -52,5 +52,23 @@ export const radioInput = ()=> (
                     id="no"
                     value="Svelte compiler"
                 />
+    </div>
+)
+
+export const selectInput = ()=> (
+    <div>
+        <SelectInput
+                    className="js_triggerRadio"
+                    aria-label="radio"
+                    name="yesLikeCode"
+                    id="yes"
+                    value="React virtual DOM"
+                    selected={true}
+                >
+                    <option>hello</option>
+                    <option>more</option>
+                    <option>less</option>
+        </SelectInput>
+
     </div>
 )
