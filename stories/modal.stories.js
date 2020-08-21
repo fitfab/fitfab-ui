@@ -1,13 +1,9 @@
 import React from 'react'
-
-import { storiesOf } from '@storybook/react'
-import { action } from '@storybook/addon-actions'
-import { linkTo } from '@storybook/addon-links'
-import { withKnobs, text, boolean, number, object } from '@storybook/addon-knobs'
-
 import { Modal } from '../lib/index'
 
-const DefaultModal = () => {
+
+export default { title: 'Modal', components: Modal, description: 'hello description'}
+export const DefaultModal = ()=> {
     const [open, setOpen] = React.useState(true)
     const toggleModal = () => {
         setOpen(!open)
@@ -24,7 +20,8 @@ const DefaultModal = () => {
                 open modal
             </button>
 
-            <Modal title="Terms & Conditions" open={open} toggleOpen={toggleModal} width="60vw" height="50vh">
+            <Modal title="Terms & Conditions" open={open} toggleOpen={toggleModal} width="35vw" height="50vh">
+                <img src="https://source.unsplash.com/780x480?men-fashion" alt="image detail" width="100%" />
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -50,11 +47,4 @@ const DefaultModal = () => {
         </>
     )
 }
-
-storiesOf('Modal', module).add('default', () => {
-    return (
-        <div>
-            <DefaultModal />
-        </div>
-    )
-})
+    
