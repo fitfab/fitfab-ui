@@ -25,6 +25,7 @@ const InputView = styled.div`
         outline: none;
     }
 
+    /* When the input is focus or filled in move the label up */
     & > input:valid + label,
     & > input:focus + label  {
         transform: translate(-30px,-20px) scale(0.8, 0.8);
@@ -33,13 +34,14 @@ const InputView = styled.div`
     & > input:focus {
         border-bottom: 2px solid green;
     }
-
+    
+    /* Firefox: removes box-shadow */
     input:invalid { 
-        /* outline: none; */
         box-shadow: none;
     }
 
     & > label {
+        color: #000;
         transition: all 300ms ease-in-out;
         display:block;
         position: absolute;
