@@ -17,10 +17,9 @@ const InputView = styled.div`
 
 
     & > input[type=text] {
-        border: 1px solid pink;
         height: 100%;
         width: 100%;
-        padding: 20px 0 0 8px;
+        padding: 16px 0 0 0;
         border: 0;
         border-bottom: 1px solid #ccc;
         outline: none;
@@ -32,7 +31,12 @@ const InputView = styled.div`
     }
     & > input:valid,
     & > input:focus {
-        border-bottom: 3px solid #c90;
+        border-bottom: 2px solid green;
+    }
+
+    input:invalid { 
+        /* outline: none; */
+        box-shadow: none;
     }
 
     & > label {
@@ -44,10 +48,8 @@ const InputView = styled.div`
         pointer-events: none;
         height: 100%;
         width: 100%;
-        padding: 20px 0 0 0;
+        padding: 16px 0 0 0;
     }
-
-
 `
 
 export interface TextInputProps {
