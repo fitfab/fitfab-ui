@@ -1,4 +1,4 @@
-{
+ {
     "presets": ["@babel/env", "@babel/typescript", "@babel/react"],
     "plugins": [
         [
@@ -14,7 +14,8 @@
                 "pure": true
             }
         ],
-        "@babel/proposal-class-properties",
+        ["@babel/plugin-proposal-class-properties", { "loose": true }],
+        // "@babel/proposal-class-properties",
         "@babel/proposal-object-rest-spread"
     ]
 }
