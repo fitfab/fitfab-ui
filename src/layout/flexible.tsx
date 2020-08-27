@@ -12,6 +12,7 @@ const View = styled.div<FlexibleProps>`
     gap: 1rem;
     margin: auto;
     width: ${p => p.width};
+    height: 100vh;
 
     & > * {
         border: 1px solid #ccc;
