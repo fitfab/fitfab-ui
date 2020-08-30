@@ -1,6 +1,8 @@
 import { useCallback, useState } from 'react'
 
-export const useToggle = (initial: boolean): [boolean, (status: boolean) => void] => {
+export const useToggle = (
+    initial: boolean,
+): [boolean, (status: boolean) => void] => {
     const [open, setOpen] = useState(initial)
 
     /**

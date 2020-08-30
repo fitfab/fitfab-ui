@@ -49,14 +49,13 @@ export const Heading: React.FC<HeadingProps> = props => {
             return <H4View>{children}</H4View>
         }
     }
-    //throw new Error('Heaing Error: Missing property "variant". Posible values: H1, H2, H3 or H4!');
     return <em style={{color: 'red'}}>Heaing Error: Missing property "variant". Posible values: H1, H2, H3 or H4!</em>
 }
 
-export interface copyProps {
+export interface CopyProps {
     size: string
 }
-export const Copy = styled.p<copyProps>`
+export const Copy = styled.p<CopyProps>`
     color: #404040;
     font-family: Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
     font-size: ${(p) => p.size? p.size: "16px"};

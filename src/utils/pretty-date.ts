@@ -13,7 +13,15 @@ const monthNames = [
     'December',
 ]
 
-const weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+const weekDays = [
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+    'Sunday',
+]
 // comments more
 export const prettyDate = (date?: string): string => {
     const d = date ? new Date(date) : new Date()
