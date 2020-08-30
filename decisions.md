@@ -1,4 +1,4 @@
-## Decissions
+# Decissions
 
 **Why there is no `.npmignore`?**
 
