@@ -132,4 +132,5 @@ The code will include `alert` eventhough it was NOT use in the main.js file.
 reference: 
 - https://code.visualstudio.com/api/advanced-topics/tslint-eslint-migration
 - https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project
+- https://medium.com/@okonetchnikov/make-linting-great-again-f3890e1ad6b8#.8qepn2b5l
 
