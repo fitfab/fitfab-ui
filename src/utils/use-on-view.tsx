@@ -5,7 +5,7 @@ export interface UseOnViewProps {
         rootMargin?: string
     }
 }
-export function useOnView({ ref, options }: UseOnViewProps) {
+export function useOnView({ ref, options }: UseOnViewProps): React.ReactNode {
     // State and setter for storing whether element is visible
     const [isIntersecting, setIntersecting] = React.useState(false)
 

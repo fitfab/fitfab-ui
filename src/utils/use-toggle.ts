@@ -8,6 +8,7 @@ export const useToggle = (initial: boolean): [boolean, (status: boolean) => void
      * return [open, useCallback((open) => setOpen((open) => !open), [open])]
      */
     // tslint:disable-next-line:no-shadowed-variable
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     return [open, useCallback(open => setOpen(open => !open), [open])]
 }
 

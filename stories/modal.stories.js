@@ -1,9 +1,9 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import React from 'react'
 import { Modal } from '../lib/index'
 
-
-export default { title: 'Modal', components: Modal, description: 'hello description'}
-export const DefaultModal = ()=> {
+export default { title: 'Modal', components: Modal, description: 'hello description' }
+export const DefaultModal = () => {
     const [open, setOpen] = React.useState(true)
     const toggleModal = () => {
         setOpen(!open)
@@ -47,4 +47,3 @@ export const DefaultModal = ()=> {
         </>
     )
 }
-    

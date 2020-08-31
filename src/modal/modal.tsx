@@ -14,14 +14,7 @@ export interface ModalProps {
     children?: React.ReactNode
 }
 
-export function Modal({
-    open,
-    toggleOpen,
-    children,
-    title,
-    width,
-    height,
-}: ModalProps) {
+export function Modal({ open, toggleOpen, children, title, width, height }: ModalProps): React.ReactNode {
     const ref = React.useRef<HTMLDivElement>(null)
     useLockBodyScroll(open)
     useClickOutside(ref, toggleOpen, open)

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {CarouselProps} from './index'
+import { CarouselProps } from './index'
 
 export const Button = styled.button`
     background: transparent;

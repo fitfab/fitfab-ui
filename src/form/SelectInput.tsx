@@ -11,7 +11,6 @@ const SelectView = styled.div`
     max-width: 320px;
     height: 40px;
     width: 100%;
-    
 
     & > * {
         box-sizing: border-box;
@@ -19,9 +18,8 @@ const SelectView = styled.div`
         font-size: 16px;
     }
 
-
     & > select {
-        border: 1px solid pink;;
+        border: 1px solid pink;
         height: 100%;
         width: 100%;
         padding: 20px 0 0 8px;
@@ -29,10 +27,6 @@ const SelectView = styled.div`
         border-bottom: 1px solid #ccc;
         outline: none;
     }
-
-
-
-
 `
 
 export interface SelectInputProps {
@@ -45,13 +39,18 @@ export interface SelectInputProps {
     children?: ReactChildren
 }
 
-export const SelectInput: React.FC<SelectInputProps> = ({children, name, id, value, label, autoComplete, type='text'}) => {
+export const SelectInput: React.FC<SelectInputProps> = ({
+    children,
+    name,
+    id,
+    value,
+    label,
+    autoComplete,
+    type = 'text',
+}) => {
     return (
-        <SelectView> 
-            <select>
-                {children}
-            </select>
+        <SelectView>
+            <select>{children}</select>
         </SelectView>
-       
     )
 }

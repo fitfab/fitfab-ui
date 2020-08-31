@@ -1,20 +1,14 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import React from 'react'
 import { CheckBox, RadioInput, TextInput, SelectInput } from '../lib/index'
 
-export default { title: 'Form/inputs' };
+export default { title: 'Form/inputs' }
 
-export const textInput = ()=> (
-    <TextInput
-        className="js_inputName"
-        name="firstname"
-        value=""
-        label="First Name"
-        required
-        autocomplete
-    />
+export const textInput = () => (
+    <TextInput className="js_inputName" name="firstname" value="" label="First Name" required autocomplete />
 )
 
-export const CheckboxInput = ()=> (
+export const CheckboxInput = () => (
     <div>
         <CheckBox
             id="yes"
@@ -35,40 +29,33 @@ export const CheckboxInput = ()=> (
     </div>
 )
 
-export const radioInput = ()=> (
+export const radioInput = () => (
     <div>
         <RadioInput
-                    className="js_triggerRadio"
-                    aria-label="radio"
-                    name="yesLikeCode"
-                    id="yes"
-                    value="React virtual DOM"
-                    selected={true}
-                />
-                <RadioInput
-                    className="js_triggerRadio"
-                    aria-label="radio"
-                    name="yesLikeCode"
-                    id="no"
-                    value="Svelte compiler"
-                />
+            className="js_triggerRadio"
+            aria-label="radio"
+            name="yesLikeCode"
+            id="yes"
+            value="React virtual DOM"
+            selected={true}
+        />
+        <RadioInput className="js_triggerRadio" aria-label="radio" name="yesLikeCode" id="no" value="Svelte compiler" />
     </div>
 )
 
-export const selectInput = ()=> (
+export const selectInput = () => (
     <div>
         <SelectInput
-                    className="js_triggerRadio"
-                    aria-label="radio"
-                    name="yesLikeCode"
-                    id="yes"
-                    value="React virtual DOM"
-                    selected={true}
-                >
-                    <option>hello</option>
-                    <option>more</option>
-                    <option>less</option>
+            className="js_triggerRadio"
+            aria-label="radio"
+            name="yesLikeCode"
+            id="yes"
+            value="React virtual DOM"
+            selected={true}
+        >
+            <option>hello</option>
+            <option>more</option>
+            <option>less</option>
         </SelectInput>
-
     </div>
 )

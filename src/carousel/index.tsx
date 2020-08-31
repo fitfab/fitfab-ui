@@ -6,11 +6,7 @@ export interface CarouselProps {
     height?: string
 }
 
-export const Carousel: React.FC<CarouselProps> = ({
-    children,
-    width = '780px',
-    height = '320px',
-}) => {
+export const Carousel: React.FC<CarouselProps> = ({ children, width = '780px', height = '320px' }) => {
     const ref = React.useRef<HTMLDivElement>(null)
     const scrollby = React.useRef(caculateScroll(width))
     const [state, setState] = React.useState({ x: 0 })
@@ -32,9 +28,7 @@ export const Carousel: React.FC<CarouselProps> = ({
     }
 
     const direction = (clientX: number) => {
-        return window.innerWidth / 2 > clientX
-            ? -scrollby.current
-            : scrollby.current
+        return window.innerWidth / 2 > clientX ? -scrollby.current : scrollby.current
     }
 
     const moveBy = (e: React.MouseEvent<HTMLElement>) => {
