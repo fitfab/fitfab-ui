@@ -49,6 +49,7 @@ export const Title = styled.h2`
 `
 
 export const CloseButton = styled.button`
+    background: transparent;
     border: none;
     cursor: pointer;
     display: block;

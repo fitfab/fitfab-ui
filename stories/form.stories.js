@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import React from 'react'
 import { CheckBox, RadioInput, TextInput, SelectInput } from '../lib/index'
 

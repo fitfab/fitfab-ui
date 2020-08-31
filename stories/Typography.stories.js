@@ -1,9 +1,9 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import React from 'react'
 import { Heading, Copy } from '../lib/index'
 
 export default { title: 'Typography' }
 
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const headings = () => (
     <div style={{ width: '680px' }}>
         <Heading variant="H1">

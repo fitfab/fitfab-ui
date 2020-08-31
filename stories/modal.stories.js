@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import React from 'react'
 import { Modal } from '../lib/index'
 
@@ -45,4 +46,4 @@ export const DefaultModal = () => {
             </Modal>
         </>
     )
-}: React.reactNode
+}
