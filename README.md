@@ -126,3 +126,10 @@ console.log(`This is the total: ${total}`)
 ```
 
 The code will include `alert` eventhough it was NOT use in the main.js file.
+
+## Migrate from TSLint to ESLint
+
+reference: 
+- https://code.visualstudio.com/api/advanced-topics/tslint-eslint-migration
+- https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project
+
