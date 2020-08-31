@@ -37,7 +37,6 @@ const CheckBoxView = styled.input`
         color: green;
         height: 4px;
         width: 12px;
-        /* transform: rotate(-45deg); */
         animation: ${Expand} 0.4s cubic-bezier(0.23, 0.615, 0.23, 1.405) both;
         position: absolute;
         left: -34px;
