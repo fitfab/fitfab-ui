@@ -7,7 +7,6 @@ const InputView = styled.div`
     max-width: 320px;
     height: 40px;
     width: 100%;
-    
 
     & > * {
         box-sizing: border-box;
@@ -15,8 +14,7 @@ const InputView = styled.div`
         font-size: 16px;
     }
 
-
-    & > input[type=text] {
+    & > input[type='text'] {
         height: 100%;
         width: 100%;
         padding: 16px 0 0 0;
@@ -27,23 +25,23 @@ const InputView = styled.div`
 
     /* When the input is focus or filled in move the label up */
     & > input:valid + label,
-    & > input:focus + label  {
-        transform: translate(-30px,-20px) scale(0.8, 0.8);
+    & > input:focus + label {
+        transform: translate(-30px, -20px) scale(0.8, 0.8);
     }
     & > input:valid,
     & > input:focus {
         border-bottom: 2px solid green;
     }
-    
+
     /* Firefox: removes box-shadow */
-    input:invalid { 
+    input:invalid {
         box-shadow: none;
     }
 
     & > label {
         color: #000;
         transition: all 300ms ease-in-out;
-        display:block;
+        display: block;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -63,10 +61,10 @@ export interface TextInputProps {
     type?: string
 }
 
-export const TextInput: React.FC<TextInputProps> = ({name, id, value, label, autoComplete, type='text'}) => {
+export const TextInput: React.FC<TextInputProps> = ({ name, id, value, label, autoComplete, type = 'text' }) => {
     return (
         <InputView>
-            <input name={name} id={name} type={type} autoComplete={autoComplete? 'auto': 'off'} required />
+            <input name={name} id={name} type={type} autoComplete={autoComplete ? 'auto' : 'off'} required />
             <label htmlFor={name}>{label}</label>
         </InputView>
     )

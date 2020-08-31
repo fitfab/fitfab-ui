@@ -17,7 +17,7 @@ const SVG: React.SFC<FitfabProps> = props => {
         ...rest
     } = props
     return (
-        <svg viewBox="0 0 159 43" {...rest}>
+        <svg viewBox="0 0 159 43" height={height} width={width} {...rest}>
             <g fill="none" fillRule="evenodd">
                 <path fill={defaultColor} d="M34 .05h39.719v10.606H60.184V43H46.912V10H34z" />
                 <path

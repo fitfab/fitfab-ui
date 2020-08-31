@@ -1,8 +1,6 @@
 import { useCallback, useState } from 'react'
 
-export const useToggle = (
-    initial: boolean,
-): [boolean, (status: boolean) => void] => {
+export const useToggle = (initial: boolean): [boolean, (status: boolean) => void] => {
     const [open, setOpen] = useState(initial)
 
     /**
@@ -10,6 +8,7 @@ export const useToggle = (
      * return [open, useCallback((open) => setOpen((open) => !open), [open])]
      */
     // tslint:disable-next-line:no-shadowed-variable
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     return [open, useCallback(open => setOpen(open => !open), [open])]
 }
 

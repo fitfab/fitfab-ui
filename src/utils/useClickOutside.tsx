@@ -1,6 +1,6 @@
 import React from 'react'
 
-export function useClickOutside(ref: React.RefObject<HTMLDivElement>, cb: () => void, active: boolean) {
+export function useClickOutside(ref: React.RefObject<HTMLDivElement>, cb: () => void, active: boolean): void {
     React.useEffect(() => {
         const listener = (event: Event) => {
             if (active) {

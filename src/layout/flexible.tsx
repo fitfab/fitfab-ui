@@ -16,13 +16,12 @@ const View = styled.div<FlexibleProps>`
 
     & > * {
         border: 1px solid #ccc;
-        flex-basis:320px;
+        flex-basis: 320px;
         flex-grow: 1;
         padding: 16px;
- 
     }
 `
 
-export const Flexible = ({children, width='40%'}: FlexibleProps)=> {
+export const Flexible = ({ children, width = '40%' }: FlexibleProps) => {
     return <View width={width}>{children}</View>
 }

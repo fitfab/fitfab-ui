@@ -19,7 +19,7 @@ Happy linting! 💖
         "preversion"
     ],
     "typescript.tsdk": "node_modules/typescript/lib",
-    "recommendations": [
-        "dbaeumer.vscode-eslint"
-    ]
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
 }
