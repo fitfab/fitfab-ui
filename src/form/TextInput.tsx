@@ -23,6 +23,19 @@ const InputView = styled.div`
         outline: none;
     }
 
+    & > label {
+        color: #000;
+        transition: all 300ms ease-in-out;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        pointer-events: none;
+        height: 100%;
+        width: 100%;
+        padding: 16px 0 0 0;
+    }
+
     /* When the input is focus or filled in move the label up */
     & > input:valid + label,
     & > input:focus + label {
@@ -36,19 +49,6 @@ const InputView = styled.div`
     /* Firefox: removes box-shadow */
     input:invalid {
         box-shadow: none;
-    }
-
-    & > label {
-        color: #000;
-        transition: all 300ms ease-in-out;
-        display: block;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        pointer-events: none;
-        height: 100%;
-        width: 100%;
-        padding: 16px 0 0 0;
     }
 `
 

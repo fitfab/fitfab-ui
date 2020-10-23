@@ -19,6 +19,7 @@
     "dev": "npm run storybook | rollup -c --watch",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
+    "lint:css":"stylelint 'src/**/*.{js,ts,tsx}' ",
     "test": "jest --config jest.config.js",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
@@ -85,6 +86,10 @@
     "rollup-plugin-peer-deps-external": "^2.2.2",
     "standard-version": "6.0.1",
     "styled-components": "^4.4.0",
+    "stylelint": "^13.7.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0",
     "ts-jest": "24.0.2",
     "tslint-config-prettier": "1.18.0",
     "typescript": "3.5.3"
@@ -96,12 +101,12 @@
   },
   "husky": {
     "hooks": {
-        "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-      "*.{js,ts,tsx}": [
-          "npm run lint"
-      ]
+    "*.{js,ts,tsx}": [
+      "npm run lint", "npm run lint:css"
+    ]
   }
 }
