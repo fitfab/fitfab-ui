@@ -56,10 +56,10 @@ export interface RadioInputProps {
 }
 
 export const RadioInput: React.FC<RadioInputProps> = props => {
-    const { name, id, value } = props
+    const { name, id, value, ...rest } = props
     return (
         <React.Fragment>
-            <RadioInputView name={name} id={id} type="radio" value={value} />
+            <RadioInputView name={name} id={id} type="radio" value={value} {...rest} />
             <label htmlFor={id}>{value}</label>
         </React.Fragment>
     )

@@ -61,10 +61,26 @@ export interface TextInputProps {
     type?: string
 }
 
-export const TextInput: React.FC<TextInputProps> = ({ name, id, value, label, autoComplete, type = 'text' }) => {
+export const TextInput: React.FC<TextInputProps> = ({
+    name,
+    id,
+    value,
+    label,
+    autoComplete,
+    type = 'text',
+    ...rest
+}) => {
     return (
         <InputView>
-            <input name={name} id={name} type={type} autoComplete={autoComplete ? 'auto' : 'off'} required />
+            <input
+                name={name}
+                id={id}
+                type={type}
+                autoComplete={autoComplete ? 'auto' : 'off'}
+                defaultValue={value}
+                required
+                {...rest}
+            />
             <label htmlFor={name}>{label}</label>
         </InputView>
     )

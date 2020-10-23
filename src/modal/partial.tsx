@@ -41,6 +41,7 @@ export const Content = styled.div`
     right: 16px;
     bottom: 24px;
     left: 16px;
+    padding: 0 0 8px 0;
 `
 export const Title = styled.h2`
     margin: 0;

@@ -52,9 +52,10 @@ export interface CheckBoxProps {
 }
 
 export const CheckBox: React.FC<CheckBoxProps> = (props: CheckBoxProps) => {
+    const { name, id, ...rest } = props
     return (
         <React.Fragment>
-            <CheckBoxView name={props.name} id={props.id} type="checkbox" />
+            <CheckBoxView name={name} id={id} type="checkbox" {...rest} />
             <label htmlFor={props.id}>{props.label}</label>
         </React.Fragment>
     )
