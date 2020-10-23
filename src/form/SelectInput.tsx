@@ -1,4 +1,4 @@
-import React, { ReactChildren } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
 // inspired by https://www.youtube.com/watch?v=bB14uo0Tu5A
@@ -33,9 +33,8 @@ export interface SelectInputProps {
     id?: string
     value?: string
     label?: string
-    autoComplete?: boolean
     type?: string
-    children?: ReactChildren
+    children?: React.ReactNode
 }
 
 export const SelectInput: React.FC<SelectInputProps> = ({ children, ...rest }) => {

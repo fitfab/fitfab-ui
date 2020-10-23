@@ -5,7 +5,7 @@ import { CheckBox, RadioInput, TextInput, SelectInput } from '../lib/index'
 export default { title: 'Form/inputs' }
 
 export const textInput = () => (
-    <TextInput className="js_inputName" name="firstname" value="" label="First Name" required autocomplete />
+    <TextInput className="js_inputName" name="firstname" value="" label="First Name" required />
 )
 
 export const CheckboxInput = () => (

@@ -2,48 +2,50 @@ import React from 'react'
 import styled from 'styled-components'
 
 const InputView = styled.div`
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
     position: relative;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    max-width: 320px;
     height: 40px;
-    width: 100%;
 
     & > * {
         box-sizing: border-box;
-        color: #666;
         font-size: 16px;
     }
 
     & > input[type='text'] {
+        border-radius: 4px;
+        color: #222;
         height: 100%;
         width: 100%;
+        letter-spacing: 1px;
         padding: 16px 0 0 0;
         border: 0;
-        border-bottom: 1px solid #ccc;
         outline: none;
+        text-indent: 9px;
     }
 
     & > label {
-        color: #000;
+        color: #333;
         transition: all 300ms ease-in-out;
         display: block;
         position: absolute;
         bottom: 0;
         left: 0;
         pointer-events: none;
-        height: 100%;
-        width: 100%;
-        padding: 16px 0 0 0;
+        padding: 0 0 0 0;
+        transform: translate(8px, -8px);
     }
 
     /* When the input is focus or filled in move the label up */
     & > input:valid + label,
     & > input:focus + label {
-        transform: translate(-30px, -20px) scale(0.8, 0.8);
+        transform: translate(0, -18px) scale(0.8, 0.8);
     }
     & > input:valid,
     & > input:focus {
-        border-bottom: 2px solid green;
+        background: rgba(223, 223, 223, 0.2);
     }
 
     /* Firefox: removes box-shadow */
