@@ -19,7 +19,7 @@
     "dev": "npm run storybook | rollup -c --watch",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
-    "lint:css":"stylelint 'src/**/*.{js,ts,tsx}' ",
+    "lint:css": "stylelint 'src/**/*.{js,ts,tsx}' ",
     "test": "jest --config jest.config.js",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
@@ -106,7 +106,8 @@
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [
-      "npm run lint", "npm run lint:css"
+      "npm run lint",
+      "npm run lint:css"
     ]
   }
 }
