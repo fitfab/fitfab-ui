@@ -1,13 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const InputView = styled.div`
+export interface InputViewProps {
+    fullWidth?: boolean
+}
+
+const InputView = styled.div<InputViewProps>`
+    display: inline-block;
+    position: relative;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    position: relative;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 40px;
+    margin: 8px;
+    width: ${({ fullWidth }) => (fullWidth ? '100%' : '288px')};
 
     & > * {
         box-sizing: border-box;
@@ -35,7 +42,7 @@ const InputView = styled.div`
         left: 0;
         pointer-events: none;
         padding: 0 0 0 0;
-        transform: translate(8px, -8px);
+        transform: translate(8px, -9px);
     }
 
     /* When the input is focus or filled in move the label up */
@@ -54,7 +61,7 @@ const InputView = styled.div`
     }
 `
 
-export interface TextInputProps {
+export interface TextInputProps extends InputViewProps {
     name?: string
     id?: string
     value?: string
@@ -64,16 +71,17 @@ export interface TextInputProps {
 }
 
 export const TextInput: React.FC<TextInputProps> = ({
-    name,
+    fullWidth,
     id,
-    value,
     label,
+    name,
+    value,
     autoComplete,
     type = 'text',
     ...rest
 }) => {
     return (
-        <InputView>
+        <InputView fullWidth={fullWidth}>
             <input
                 name={name}
                 id={id}

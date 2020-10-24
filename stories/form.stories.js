@@ -5,7 +5,10 @@ import { CheckBox, RadioInput, TextInput, SelectInput } from '../lib/index'
 export default { title: 'Form/inputs' }
 
 export const textInput = () => (
-    <TextInput className="js_inputName" name="firstname" value="" label="First Name" required />
+    <>
+        <TextInput name="firstname" value="" label="First Name" required />
+        <TextInput name="lastname" value="" label="Last Name" required />
+    </>
 )
 
 export const CheckboxInput = () => (

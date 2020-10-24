@@ -29,9 +29,6 @@ const RadioInputView = styled.input`
         position: absolute;
         left: -40px;
     }
-    &:checked + label:before {
-        box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.4);
-    }
     &:checked + label:after {
         animation: ${Expand} 0.4s cubic-bezier(0.23, 0.615, 0.23, 1.405) both;
         background: green;
