@@ -50,8 +50,8 @@ export const selectInput = () => (
     <div>
         <SelectInput
             className="js_triggerRadio"
-            aria-label="radio"
-            name="yesLikeCode"
+            aria-label="Select"
+            name="select"
             id="yes"
             value="React virtual DOM"
             selected={true}
