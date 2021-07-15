@@ -8,43 +8,43 @@ export default [
         height: '320px',
     },
     {
-        src: 'https://source.unsplash.com/collection/190727/780x320',
+        src: 'https://source.unsplash.com/collection/190727/280x320',
         alt: 'This is an image',
         caption:
             'Em eratemquam ut offi cium eos elignimusam latur. Conestrum necae di dio eiusapis si sus.it millaciis asit quodit ea voluptat.',
-        width: '780px',
+        width: '280px',
         height: '320px',
     },
     {
-        src: 'https://source.unsplash.com/480x320?city',
+        src: 'https://source.unsplash.com/180x320?city',
         alt: 'This is an image',
         caption:
             'Em eratemquam ut offi cium eos elignimusam latur. Conestrum necae di dio eiusapis si sus.it millaciis asit quodit ea voluptat.',
-        width: '480px',
+        width: '180px',
         height: '320px',
     },
     {
-        src: 'https://source.unsplash.com/1250x320?sports',
+        src: 'https://source.unsplash.com/240x320?sports',
         alt: 'This is an image',
         caption:
             'Em eratemquam ut offi cium eos elignimusam latur. Conestrum necae di dio eiusapis si sus.it millaciis asit quodit ea voluptat.',
-        width: '1250px',
+        width: '240px',
         height: '320px',
     },
     {
-        src: 'https://source.unsplash.com/450x320?nature,water',
+        src: 'https://source.unsplash.com/320x320?nature,water',
         alt: 'This is an image',
         caption:
             'Em eratemquam ut offi cium eos elignimusam latur. Conestrum necae di dio eiusapis si sus.it millaciis asit quodit ea voluptat.',
-        width: '450px',
+        width: '320px',
         height: '320px',
     },
     {
-        src: 'https://source.unsplash.com/collection/190727/600x320',
+        src: 'https://source.unsplash.com/collection/190727/196x320',
         alt: 'This is an image',
         caption:
             'Em eratemquam ut offi cium eos elignimusam latur. Conestrum necae di dio eiusapis si sus.it millaciis asit quodit ea voluptat.',
-        width: '600px',
+        width: '196px',
         height: '320px',
     },
 ]

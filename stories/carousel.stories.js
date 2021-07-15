@@ -7,7 +7,7 @@ import images from './data/slides'
 export default { title: 'Carousel', component: Carousel }
 
 export const carouselWide = () => (
-    <Carousel width="100%">
+    <Carousel>
         {images.map((slide, index) => (
             <img key={index} src={slide.src} alt={slide.alt} width={slide.width} />
         ))}

@@ -48,6 +48,9 @@ export const CarouselView = styled.div<CarouselProps>`
         display: inline-block;
         margin-right: 1rem;
     }
+    > *:last-child {
+        margin-right: 0;
+    }
 `
 export const ViewPort = styled.div<CarouselProps>`
     width: ${p => p.width};
