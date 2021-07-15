@@ -6,25 +6,26 @@ export interface CarouselProps {
     height?: string
 }
 
-export const Carousel: React.FC<CarouselProps> = ({ children, width = '780px', height = '320px' }) => {
-    const ref = React.useRef<HTMLDivElement>(null)
+export const Carousel: React.FC<CarouselProps> = ({ children, width = '100%', height = '320px' }) => {
+    const carouselViewRef = React.useRef<HTMLDivElement>(null)
     const scrollby = React.useRef(caculateScroll(width))
-    const [state, setState] = React.useState({ x: 0 })
+    const [postion, setPosition] = React.useState({ x: 0 })
 
     React.useEffect(() => {
-        ref.current!.scrollBy({
+        carouselViewRef.current!.scrollBy({
             behavior: 'smooth',
-            left: state.x,
+            left: postion.x,
         })
-    }, [state])
+    }, [postion])
 
-    function caculateScroll(val: string) {
-        let carouselWidth = parseInt(val.match(/(\d+)/)![0]!, 10)
+    function caculateScroll(carouselWidth: string) {
+        // Grabs the digits and parses into integer
+        let scrollAmount = parseInt(carouselWidth.match(/(\d+)/)![0]!, 10)
         // if width is less than 100 we assume it's percentage base
-        if (carouselWidth <= 100) {
-            carouselWidth = window.innerWidth
+        if (scrollAmount <= 100) {
+            scrollAmount = window.innerWidth
         }
-        return (carouselWidth * 50) / 100
+        return (scrollAmount * 60) / 100
     }
 
     const direction = (clientX: number) => {
@@ -33,13 +34,13 @@ export const Carousel: React.FC<CarouselProps> = ({ children, width = '780px', h
 
     const moveBy = (e: React.MouseEvent<HTMLElement>) => {
         e.persist()
-        setState({
+        setPosition({
             x: direction(e.clientX),
         })
     }
     return (
         <ViewPort className="viewport" width={width} height={height}>
-            <CarouselView ref={ref}>{children}</CarouselView>
+            <CarouselView ref={carouselViewRef}>{children}</CarouselView>
             <Button onClick={moveBy} aria-label="previous"></Button>
             <Button onClick={moveBy} aria-label="next"></Button>
         </ViewPort>
