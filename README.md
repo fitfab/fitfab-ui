@@ -135,8 +135,16 @@ reference:
 -   https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project
 -   https://medium.com/@okonetchnikov/make-linting-great-again-f3890e1ad6b8#.8qepn2b5l
 
-## husky update 2021
+## Husky & lint-staged update 2021
 
 -   `npx husky-init && npm install`
 
 **Note**: Husky will create a `prepare` script command within package.json
+
+-   `npx mrm@2 lint-staged`
+
+This command will install and configure husky and lint-staged depending on the code quality tools from your project's package.json dependencies
+
+### create a hook
+
+`npx husky add .husky/pre-push echo "npm test"`

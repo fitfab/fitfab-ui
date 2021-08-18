@@ -5,4 +5,5 @@ afterEach(cleanup)
 
 test('Render Carousel', () => {
     console.log('TODO: Render Carousel')
+    expect('todo').toBeTruthy()
 })
