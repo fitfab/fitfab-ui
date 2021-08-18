@@ -22,6 +22,6 @@ const View = styled.div<FlexibleProps>`
     }
 `
 
-export const Flexible = ({ children, width = '40%' }: FlexibleProps) => {
+export const Flexible = ({ children, width = '40%' }: FlexibleProps): JSX.Element => {
     return <View width={width}>{children}</View>
 }

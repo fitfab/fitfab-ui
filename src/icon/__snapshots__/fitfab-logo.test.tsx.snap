@@ -3,7 +3,9 @@
 exports[`Render Fitfab logo with default props 1`] = `
 <svg
   class="sc-bdVaJa fmkiau"
+  height="43"
   viewBox="0 0 159 43"
+  width="159"
 >
   <g
     fill="none"
