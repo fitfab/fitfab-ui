@@ -3,7 +3,8 @@
 exports[`Render CheckBox 1`] = `
 <div>
   <input
-    class="sc-bdVaJa kaXySp"
+    class="sc-bdVaJa jpiWpf"
+    label="no"
     type="checkbox"
   />
   <label>

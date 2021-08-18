@@ -47,7 +47,9 @@ export const CarouselView = styled.div<CarouselProps>`
         scroll-snap-align: center;
         display: inline-block;
         margin-right: 1rem;
+        flex: none;
     }
+
     > *:last-child {
         margin-right: 0;
     }

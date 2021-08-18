@@ -1,6 +1,6 @@
 export default [
     {
-        src: 'https://source.unsplash.com/random/420x320',
+        src: 'https://source.unsplash.com/random/480x320',
         alt: 'This is an image',
         caption:
             'Em eratemquam ut offi cium eos elignimusam latur. Conestrum necae di dio eiusapis si sus.it millaciis asit quodit ea voluptat.',
