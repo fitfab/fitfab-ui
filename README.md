@@ -129,8 +129,27 @@ The code will include `alert` eventhough it was NOT use in the main.js file.
 
 ## Migrate from TSLint to ESLint
 
-reference: 
-- https://code.visualstudio.com/api/advanced-topics/tslint-eslint-migration
-- https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project
-- https://medium.com/@okonetchnikov/make-linting-great-again-f3890e1ad6b8#.8qepn2b5l
+reference:
 
+-   https://code.visualstudio.com/api/advanced-topics/tslint-eslint-migration
+-   https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project
+-   https://medium.com/@okonetchnikov/make-linting-great-again-f3890e1ad6b8#.8qepn2b5l
+
+## Husky & lint-staged update 2021
+
+-   `npx husky-init && npm install`
+
+    **Note**: Husky will create a `prepare` script command within package.json
+
+-   `npx mrm@2 lint-staged`
+
+    This command will install and configure husky and lint-staged depending on the code quality tools from your project's package.json dependencies
+
+### create a new hook
+
+-   `npx husky add .husky/pre-push 'npm test'`
+
+    **Note**: add the `pre-push` hook to only run the tests when pushing
+
+-   `npx husky add .husky/commit-msg 'message'`
+    **Note**: This is to enforce [Conventional Commits](https://www.conventionalcommits.org/) specification
