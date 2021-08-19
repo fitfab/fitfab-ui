@@ -139,12 +139,14 @@ reference:
 
 -   `npx husky-init && npm install`
 
-**Note**: Husky will create a `prepare` script command within package.json
+    **Note**: Husky will create a `prepare` script command within package.json
 
 -   `npx mrm@2 lint-staged`
 
-This command will install and configure husky and lint-staged depending on the code quality tools from your project's package.json dependencies
+    This command will install and configure husky and lint-staged depending on the code quality tools from your project's package.json dependencies
 
-### create a hook
+### create a new hook
 
-`npx husky add .husky/pre-push echo "npm test"`
+-   `npx husky add .husky/pre-push 'npm test'`
+
+    **Note**: add the `pre-push` hook to only run the tests when pushing
