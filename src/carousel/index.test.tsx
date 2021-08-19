@@ -4,6 +4,6 @@ import { cleanup } from '@testing-library/react'
 afterEach(cleanup)
 
 test('Render Carousel', () => {
-    console.log('TODO: Render Carousel')
+    console.log('TODO: Render Carousel test')
     expect('todo').toBeTruthy()
 })
