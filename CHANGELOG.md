@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/fitfab/fitfab-ui/compare/v2.2.3...v2.3.0) (2021-08-19)
+
+
+### Features
+
+* testing ([4e4dd68](https://github.com/fitfab/fitfab-ui/commit/4e4dd68b4dad08a694fccb1f260f00e184b01609))
+
 ### [2.2.3](https://github.com/fitfab/fitfab-ui/compare/v2.2.2...v2.2.3) (2021-08-19)
 
 ### [2.2.2](https://github.com/fitfab/fitfab-ui/compare/v2.2.1...v2.2.2) (2021-08-19)
