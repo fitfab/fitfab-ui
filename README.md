@@ -150,3 +150,6 @@ reference:
 -   `npx husky add .husky/pre-push 'npm test'`
 
     **Note**: add the `pre-push` hook to only run the tests when pushing
+
+-   `npx husky add .husky/commit-msg 'message'`
+    **Note**: This is to enforce [Conventional Commits](https://www.conventionalcommits.org/) specification
