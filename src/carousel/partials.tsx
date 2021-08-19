@@ -2,36 +2,46 @@ import styled from 'styled-components'
 import { CarouselProps } from './index'
 
 export const Button = styled.button`
-    background: transparent;
+    background: rgba(0, 0, 0, 0.2);
     color: #fff;
     cursor: pointer;
-    border: 0;
-
-    border-top: 2px solid #fff;
-    border-left: 2px solid #fff;
-
+    border: none;
+    border-radius: 100%;
     display: inline-block;
-
-    font-size: 24px;
-    font-weight: 100;
-    line-height: 0;
-    text-align: center;
-
     position: absolute;
     top: 50%;
-    left: 16px;
-    transform: translateY(-50%) rotate(-45deg);
+    left: 8px;
+    transform: translateY(-50%);
 
-    height: 24px;
-    width: 24px;
+    height: 48px;
+    width: 48px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-25%, -50%) rotate(135deg);
+        height: 16px;
+        width: 16px;
+
+        border-bottom: 2px solid rgba(255, 255, 255, 1);
+        border-right: 2px solid rgba(255, 255, 255, 1);
+    }
 
     &:last-child {
-        border-top: 0;
-        border-left: 0;
-        border-right: 2px solid #fff;
-        border-bottom: 2px solid #fff;
         left: auto;
-        right: 16px;
+        right: 8px;
+
+        &:before {
+            border-bottom: none;
+            border-top: 2px solid rgba(255, 255, 255, 1);
+            transform: translate(-70%, -50%) rotate(45deg);
+        }
+    }
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.6);
     }
 `
 export const CarouselView = styled.div<CarouselProps>`

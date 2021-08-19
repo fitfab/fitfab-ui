@@ -19,7 +19,7 @@ const Box = styled.div`
     width: ${p => p.width};
     background-color: ${p => p.color};
     color: #fff;
-    font-size: 3rem;
+    font-size: 4rem;
 `
 
 export default { title: 'Carousel', component: Carousel }
