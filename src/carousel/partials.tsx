@@ -61,8 +61,3 @@ export const ViewPort = styled.div<CarouselProps>`
     overflow: hidden;
     position: relative;
 `
-
-export const Miguel = styled.div`
-    border-radius: 50%;
-    padding: 0.5rem;
-`
