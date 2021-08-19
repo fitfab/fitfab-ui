@@ -42,34 +42,11 @@ Then start using as normal:
 
 _NPM CMD:_ [read about npm scripts](https://docs.npmjs.com/misc/scripts)
 
-`"prepare" : "npm run build"`
-
--   Run both BEFORE the package is packed and published, and on local npm install -- So here I build library
-
 `"prepublishOnly": "npm test && npm run lint"`
 
 -   This run BEFORE the package is prepared and packed, ONLY on npm publish.
 
 -   A good place to verify that linting rules and tests are passing.
-
-`"preversion": "npm run lint"`
-
--   Run BEFORE bumping the package version.
-
--   Ensure that the new version DOES NOT have bad code.
-
-`"version": "npm run format && git add -A src"`
-
--   Run AFTER bumping the package version, but BEFORE commit.
-
--   Again ensuring that code still good when increasing the version.
--   CMD: `npm version <patch | minor | major>`
-
-`"postversion": "git push && git push --tags"`
-
--   Run AFTER bumping the package version, and AFTER commit.
-
--   So here I push the commit and tags
 
 ## Rollup TypeScript & Babel setup
 
@@ -145,11 +122,12 @@ reference:
 
     This command will install and configure husky and lint-staged depending on the code quality tools from your project's package.json dependencies
 
-### create a new hook
+### creating a new husky hooks
 
 -   `npx husky add .husky/pre-push 'npm test'`
 
     **Note**: add the `pre-push` hook to only run the tests when pushing
 
 -   `npx husky add .husky/commit-msg 'message'`
+
     **Note**: This is to enforce [Conventional Commits](https://www.conventionalcommits.org/) specification

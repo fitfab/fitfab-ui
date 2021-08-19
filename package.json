@@ -17,7 +17,6 @@
     "build": "npm run build:types && npm run build:js",
     "prebuild": "rm -rf lib",
     "dev": "npm run storybook | rollup -c --watch",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --fix",
     "lint:css": "stylelint 'src/**/*.{js,ts,tsx}' ",
     "test": "jest --config jest.config.js",
