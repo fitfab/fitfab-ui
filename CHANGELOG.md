@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.4.1](https://github.com/fitfab/fitfab-ui/compare/v2.4.0...v2.4.1) (2021-08-20)
+
+
+### Bug Fixes
+
+* button background color and test ([fe9c9d9](https://github.com/fitfab/fitfab-ui/commit/fe9c9d98ed096a8a36bbb6d81489d22b40e0dcdf))
+
 ## [2.4.0](https://github.com/fitfab/fitfab-ui/compare/v2.3.0...v2.4.0) (2021-08-20)
 
 
