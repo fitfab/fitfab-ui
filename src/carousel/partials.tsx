@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { CarouselProps } from './index'
 
 export const Button = styled.button`
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.4);
     color: #fff;
     cursor: pointer;
     border: none;
@@ -41,7 +41,7 @@ export const Button = styled.button`
     }
 
     &:hover {
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(0, 0, 0, 0.7);
     }
 `
 export const CarouselView = styled.div<CarouselProps>`

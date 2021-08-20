@@ -1,9 +1,11 @@
-import { cleanup } from '@testing-library/react'
-// import { Carousel } from './index'
+import React from 'react'
+import { cleanup, render } from '@testing-library/react'
+import { Button } from './partials'
 
 afterEach(cleanup)
 
 test('Render Carousel', () => {
-    console.log('TODO: Render Carousel test')
-    expect('todo').toBeTruthy()
+    const { container } = render(<Button>helloe</Button>)
+
+    expect(container.firstChild).toMatchSnapshot()
 })
