@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Carousel 1`] = `
+<button
+  class="sc-bdVaJa dkmxRm"
+>
+  helloe
+</button>
+`;
