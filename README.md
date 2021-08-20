@@ -131,3 +131,7 @@ reference:
 -   `npx husky add .husky/commit-msg 'message'`
 
     **Note**: This is to enforce [Conventional Commits](https://www.conventionalcommits.org/) specification
+
+### Commitlint setup
+
+Read the [Local Setup Guide](https://commitlint.js.org/#/./guides-local-setup?id=guides-local-setup) for Commitlint

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.4.0](https://github.com/fitfab/fitfab-ui/compare/v2.3.0...v2.4.0) (2021-08-20)
+
+
+### Features
+
+* add commitlint ([7228b10](https://github.com/fitfab/fitfab-ui/commit/7228b10b3a0da8dfd2a83b0f35460d12f887ac07))
+
 ## [2.3.0](https://github.com/fitfab/fitfab-ui/compare/v2.2.3...v2.3.0) (2021-08-19)
 
 
