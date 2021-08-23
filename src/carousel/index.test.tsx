@@ -5,7 +5,7 @@ import { Button } from './partials'
 afterEach(cleanup)
 
 test('Render Carousel', () => {
-    const { container } = render(<Button>helloe</Button>)
+    const { container } = render(<Button>hello</Button>)
 
     expect(container.firstChild).toMatchSnapshot()
 })
