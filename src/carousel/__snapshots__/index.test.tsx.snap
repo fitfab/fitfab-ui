@@ -4,6 +4,6 @@ exports[`Render Carousel 1`] = `
 <button
   class="sc-bdVaJa dkmxRm"
 >
-  helloe
+  hello
 </button>
 `;
