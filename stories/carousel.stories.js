@@ -10,6 +10,7 @@ const list = [
     { width: '280px', height: 'auto', color: 'pink' },
     { width: '680px', height: 'auto', color: 'lightblue' },
     { width: '780px', height: 'auto', color: 'orange' },
+    { width: '390px', height: 'auto', color: 'purple' },
 ]
 
 const Box = styled.div`
@@ -22,14 +23,21 @@ const Box = styled.div`
     font-size: 4rem;
 `
 
+const StoryView = styled.div`
+    width: 70%;
+    margin: 0 auto;
+`
+
 export default { title: 'Carousel', component: Carousel }
 
 export const carouselWide = () => (
-    <Carousel>
-        {images.map((slide, index) => (
-            <img key={index} src={slide.src} alt={slide.alt} width={slide.width} />
-        ))}
-    </Carousel>
+    <StoryView>
+        <Carousel>
+            {images.map((slide, index) => (
+                <img key={index} src={slide.src} alt={slide.alt} width={slide.width} />
+            ))}
+        </Carousel>
+    </StoryView>
 )
 
 export const carouselFixed = () => (
