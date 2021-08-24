@@ -9,4 +9,5 @@ test('Render Carousel', () => {
 
     expect(container.firstChild).toMatchSnapshot()
     expect(true).toBeTruthy()
+    expect(false).toBeFalsy()
 })
