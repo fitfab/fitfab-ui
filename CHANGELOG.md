@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/fitfab/fitfab-ui/compare/v2.4.2...v3.0.0) (2021-08-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* change button and adjust styles
+
+* change button and adjust styles ([119629e](https://github.com/fitfab/fitfab-ui/commit/119629e9066e5b414b94d33a006a4aeddacb9893))
+
 ### [2.4.2](https://github.com/fitfab/fitfab-ui/compare/v2.4.1...v2.4.2) (2021-08-23)
 
 ### [2.4.1](https://github.com/fitfab/fitfab-ui/compare/v2.4.0...v2.4.1) (2021-08-20)
