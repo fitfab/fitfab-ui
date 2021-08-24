@@ -6,7 +6,7 @@ import images from './data/slides'
 
 const list = [
     { width: '480px', height: 'auto', color: '#dc99ff' },
-    { width: '480px', height: 'auto', color: '#ccc' },
+    { width: '320px', height: 'auto', color: '#ccc' },
     { width: '280px', height: 'auto', color: 'pink' },
     { width: '680px', height: 'auto', color: 'lightblue' },
     { width: '780px', height: 'auto', color: 'orange' },

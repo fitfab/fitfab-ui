@@ -12,7 +12,7 @@ export const Carousel: React.FC<CarouselProps> = ({ children, width = '100%', he
     const [postion, setPosition] = React.useState({ x: 0 })
 
     React.useLayoutEffect(() => {
-        scrollby.current = (carouselViewRef.current?.parentNode?.clientWidth * 65) / 100
+        scrollby.current = (carouselViewRef.current?.parentNode?.clientWidth * 55) / 100
         carouselViewRef!.current!.scrollBy!({
             behavior: 'smooth',
             left: postion.x,
