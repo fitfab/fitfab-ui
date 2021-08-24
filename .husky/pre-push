@@ -3,5 +3,7 @@
 
 # npm test -- --changedSince=@{push}
 
-npm test -- --onlyChanged --changedSince=@{push}
+# npm test -- --onlyChanged 
+
+npm test -- --changedSince=origin/master
 
