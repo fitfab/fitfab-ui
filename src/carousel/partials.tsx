@@ -2,46 +2,48 @@ import styled from 'styled-components'
 import { CarouselProps } from './index'
 
 export const Button = styled.button`
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 1);
     color: #fff;
     cursor: pointer;
     border: none;
-    border-radius: 100%;
+    border-radius: 55% 0% 55% 0%;
     display: inline-block;
     position: absolute;
     top: 50%;
-    left: 8px;
-    transform: translateY(-50%);
+    left: -32px;
+    transform: translateY(-50%) rotate(135deg);
+    filter: drop-shadow(0 0 0.1rem rgb(0, 0, 0, 0.3));
 
-    height: 48px;
-    width: 48px;
+    height: 56px;
+    width: 56px;
 
     &:before {
         content: '';
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-25%, -50%) rotate(135deg);
-        height: 16px;
-        width: 16px;
+        transform: translate(-120%, -120%) rotate(0deg);
+        height: 12px;
+        width: 12px;
 
-        border-bottom: 2px solid rgba(255, 255, 255, 1);
-        border-right: 2px solid rgba(255, 255, 255, 1);
+        border-bottom: 1px solid #9c9c9c;
+        border-right: 1px solid #9c9c9c;
+        border-radius: 1px;
     }
 
     &:last-child {
         left: auto;
-        right: 8px;
+        right: -32px;
 
         &:before {
             border-bottom: none;
-            border-top: 2px solid rgba(255, 255, 255, 1);
-            transform: translate(-70%, -50%) rotate(45deg);
+            border-top: 1px solid #9c9c9c;
+            transform: translate(20%, 20%) rotate(-90deg);
         }
     }
 
     &:hover {
-        background: rgba(0, 0, 0, 0.7);
+        filter: drop-shadow(0 0 0.1rem rgb(0, 0, 0, 0.3));
     }
 `
 export const CarouselView = styled.div<CarouselProps>`
@@ -51,7 +53,7 @@ export const CarouselView = styled.div<CarouselProps>`
     overflow-x: scroll;
     padding: 0 0 16px 0;
     scroll-snap-type: x mandatory;
-    transform: translate3d(0, 0, 0); /* force GPU */
+    transform: translate3d(0, 0, 0); /* force the GPU */
 
     > * {
         scroll-snap-align: center;

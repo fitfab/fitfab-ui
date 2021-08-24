@@ -11,7 +11,7 @@ export const Carousel: React.FC<CarouselProps> = ({ children, width = '100%', he
     const scrollby = React.useRef(0)
     const [postion, setPosition] = React.useState({ x: 0 })
 
-    React.useEffect(() => {
+    React.useLayoutEffect(() => {
         scrollby.current = (carouselViewRef.current?.parentNode?.clientWidth * 65) / 100
         carouselViewRef!.current!.scrollBy!({
             behavior: 'smooth',
@@ -29,6 +29,7 @@ export const Carousel: React.FC<CarouselProps> = ({ children, width = '100%', he
             x: direction(e.clientX),
         })
     }
+
     return (
         <ViewPort className="viewport" width={width} height={height}>
             <CarouselView ref={carouselViewRef}>{children}</CarouselView>

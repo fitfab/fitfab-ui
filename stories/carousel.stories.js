@@ -5,12 +5,12 @@ import { Carousel } from '../lib/index'
 import images from './data/slides'
 
 const list = [
-    { width: '480px', height: 'auto', color: 'red' },
-    { width: '480px', height: 'auto', color: 'green' },
+    { width: '480px', height: 'auto', color: '#dc99ff' },
+    { width: '480px', height: 'auto', color: '#ccc' },
     { width: '280px', height: 'auto', color: 'pink' },
     { width: '680px', height: 'auto', color: 'lightblue' },
     { width: '780px', height: 'auto', color: 'orange' },
-    { width: '390px', height: 'auto', color: 'purple' },
+    { width: '390px', height: 'auto', color: '#59a6dc' },
 ]
 
 const Box = styled.div`
