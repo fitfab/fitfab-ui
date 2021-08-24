@@ -16,11 +16,11 @@ export default [
         height: '320px',
     },
     {
-        src: 'https://source.unsplash.com/180x320?city',
+        src: 'https://source.unsplash.com/780x320?city',
         alt: 'This is an image',
         caption:
             'Em eratemquam ut offi cium eos elignimusam latur. Conestrum necae di dio eiusapis si sus.it millaciis asit quodit ea voluptat.',
-        width: '180px',
+        width: '780px',
         height: '320px',
     },
     {
@@ -53,6 +53,14 @@ export default [
         caption:
             'Em eratemquam ut offi cium eos elignimusam latur. Conestrum necae di dio eiusapis si sus.it millaciis asit quodit ea voluptat.',
         width: '196px',
+        height: '320px',
+    },
+    {
+        src: 'https://source.unsplash.com/collection/190727/780x320',
+        alt: 'This is an image',
+        caption:
+            'Em eratemquam ut offi cium eos elignimusam latur. Conestrum necae di dio eiusapis si sus.it millaciis asit quodit ea voluptat.',
+        width: '780px',
         height: '320px',
     },
 ]

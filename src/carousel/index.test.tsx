@@ -8,4 +8,5 @@ test('Render Carousel', () => {
     const { container } = render(<Button>hello</Button>)
 
     expect(container.firstChild).toMatchSnapshot()
+    expect(true).toBeTruthy()
 })
