@@ -135,3 +135,5 @@ reference:
 ### Commitlint setup
 
 Read the [Local Setup Guide](https://commitlint.js.org/#/./guides-local-setup?id=guides-local-setup) for Commitlint
+
+### adding fitgma tokens
