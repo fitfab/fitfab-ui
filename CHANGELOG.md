@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://github.com/fitfab/fitfab-ui/compare/v3.0.0...v3.1.0) (2022-04-12)
+
+
+### Features
+
+* new look for the buttons ([fd662d2](https://github.com/fitfab/fitfab-ui/commit/fd662d2e25f1fac3ac79ec34d1d9dcb93ed069b3))
+* pre push hook test ([31e7909](https://github.com/fitfab/fitfab-ui/commit/31e79099bf6125d3064913e7476d69ef69f132b0))
+
+
+### Bug Fixes
+
+* ts error and set scroll snap align to start ([859d5ab](https://github.com/fitfab/fitfab-ui/commit/859d5ab7b93c57a776c1ee510820c90fcd6de6be))
+
 ## [3.0.0](https://github.com/fitfab/fitfab-ui/compare/v2.4.2...v3.0.0) (2021-08-24)
 
 ### ⚠ BREAKING CHANGES
