@@ -30,7 +30,7 @@ const StoryView = styled.div`
 
 export default { title: 'Carousel', component: Carousel }
 
-export const carouselWide = () => (
+export const CarouselWide = () => (
     <StoryView>
         <Carousel>
             {images.map((slide, index) => (
@@ -40,7 +40,7 @@ export const carouselWide = () => (
     </StoryView>
 )
 
-export const carouselFixed = () => (
+export const CarouselFixed = () => (
     <Carousel width="780px">
         {list.map((slide, index) => (
             <Box key={index} width={slide.width} color={slide.color}>

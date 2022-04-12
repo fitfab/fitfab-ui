@@ -4,14 +4,14 @@ import { CheckBox, RadioInput, TextInput, SelectInput } from '../lib/index'
 
 export default { title: 'Form/inputs' }
 
-export const textInput = () => (
+export const TextInputStory = () => (
     <>
         <TextInput name="firstname" value="" label="First Name" required />
         <TextInput name="lastname" value="" label="Last Name" required />
     </>
 )
 
-export const CheckboxInput = () => (
+export const CheckboxInputStory = () => (
     <div>
         <CheckBox
             id="color-blue"
@@ -32,7 +32,7 @@ export const CheckboxInput = () => (
     </div>
 )
 
-export const radioInput = () => (
+export const RadioInputStory = () => (
     <div>
         <RadioInput
             className="js_triggerRadio"
@@ -46,7 +46,7 @@ export const radioInput = () => (
     </div>
 )
 
-export const selectInput = () => (
+export const SelectInputStory = () => (
     <div>
         <SelectInput
             className="js_triggerRadio"
