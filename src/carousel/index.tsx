@@ -7,12 +7,12 @@ export interface CarouselProps {
 }
 
 export const Carousel: React.FC<CarouselProps> = ({ children, width = '100%', height = '320px' }) => {
-    const carouselViewRef = React.useRef<HTMLDivElement>(null)
+    const carouselViewRef = React.useRef<HTMLDivElement | null>(null)
     const scrollby = React.useRef(0)
     const [postion, setPosition] = React.useState({ x: 0 })
 
     React.useLayoutEffect(() => {
-        scrollby.current = (carouselViewRef.current?.parentNode?.clientWidth * 55) / 100
+        scrollby.current = carouselViewRef.current!.parentElement!.clientWidth * 0.8
         carouselViewRef!.current!.scrollBy!({
             behavior: 'smooth',
             left: postion.x,

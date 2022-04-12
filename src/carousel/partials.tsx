@@ -56,7 +56,7 @@ export const CarouselView = styled.div<CarouselProps>`
     transform: translate3d(0, 0, 0); /* force the GPU */
 
     > * {
-        scroll-snap-align: center;
+        scroll-snap-align: start;
         display: inline-block;
         margin-right: 1rem;
         flex: none;
