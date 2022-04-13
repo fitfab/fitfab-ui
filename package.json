@@ -9,6 +9,12 @@
   "files": [
     "lib/**/*"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/my-lib.es.js",
+      "require": "./dist/my-lib.umd.js"
+    }
+  },
   "scripts": {
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch",
@@ -23,7 +29,8 @@
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "release": "standard-version"
+    "release": "standard-version",
+    "vite:build": "vite build"
   },
   "repository": {
     "type": "git",
@@ -64,7 +71,6 @@
     "@typescript-eslint/eslint-plugin": "^3.10.1",
     "@typescript-eslint/eslint-plugin-tslint": "^3.10.1",
     "@typescript-eslint/parser": "^3.10.1",
-    "@vitejs/plugin-react": "^1.3.0",
     "babel-loader": "8.0.6",
     "babel-plugin-styled-components": "1.10.6",
     "chromatic": "^5.10.2",
@@ -97,7 +103,8 @@
     "ts-jest": "^26.5.6",
     "tslint-config-prettier": "1.18.0",
     "typescript": "^4.3.5",
-    "vite": "^2.9.1"
+    "vite": "^2.9.1",
+    "vite-dts": "^1.0.4"
   },
   "peerDependencies": {
     "react": "^16.8.4",
